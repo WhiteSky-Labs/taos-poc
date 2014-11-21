@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:magento="http://www.mulesoft.org/schema/mule/magento" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.5.1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/magento http://www.mulesoft.org/schema/mule/magento/current/mule-magento.xsd">
+    <flow name="get-productFlow1" doc:name="get-productFlow1">
+        <http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8089" doc:name="receive-data"/>
+        <magento:list-products config-ref="Magento" doc:name="get-product" filter="dsql:SELECT additional_attributes,name,sku FROM CatalogProductReturnEntity where sku='WSL_SKU_CHILD_006'">
+        
+        </magento:list-products>
+        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+    </flow>
+</mule>

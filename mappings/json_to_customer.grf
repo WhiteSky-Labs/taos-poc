@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph __version="3.5.0" author="E0013" created="Tue Nov 18 08:52:19 IST 2014" description="JSON To CUSTOMER" guiVersion="3.4.4.P" id="1416283177618" licenseCode="Unlicensed" licenseType="Unknown" modified="Tue Nov 18 08:52:19 IST 2014" modifiedBy="E0013" name="JSON_To_CUSTOMER" preview-file="${Project_Home}/src/main/resources/samplerequest.json" revision="1.0" showComponentDetails="false">
+<Global>
+<Metadata __index="224" __referenceCounter="0" __sourcePath="{}/CUSTOMER/addressbookList/addressbook" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="a9ec1427-5624-494a-8e49-d7c8175f3ee3" _parent_id="__parent_id" _type="Output" id="1ecc23ce-10f9-4200-9aff-2e44501e4f16">
+<Record fieldDelimiter="," name="addressbook" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __implementationClass="java.lang.String" __index="236" __sourcePath="{}/CUSTOMER/addressbookList/addressbook/addr1" containerType="SINGLE" label="addr1" name="addr1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="237" __sourcePath="{}/CUSTOMER/addressbookList/addressbook/addr2" containerType="SINGLE" label="addr2" name="addr2" type="string"/>
+<Field __implementationClass="java.lang.String" __index="239" __sourcePath="{}/CUSTOMER/addressbookList/addressbook/addr3" containerType="SINGLE" label="addr3" name="addr3" type="string"/>
+<Field __implementationClass="java.lang.String" __index="232" __sourcePath="{}/CUSTOMER/addressbookList/addressbook/addrText" containerType="SINGLE" label="addrText" name="addrText" type="string"/>
+<Field __implementationClass="java.lang.String" __index="228" __sourcePath="{}/CUSTOMER/addressbookList/addressbook/addressee" containerType="SINGLE" label="addressee" name="addressee" type="string"/>
+<Field __implementationClass="java.lang.String" __index="240" __sourcePath="{}/CUSTOMER/addressbookList/addressbook/attention" containerType="SINGLE" label="attention" name="attention" type="string"/>
+<Field __implementationClass="java.lang.String" __index="234" __sourcePath="{}/CUSTOMER/addressbookList/addressbook/city" containerType="SINGLE" label="city" name="city" type="string"/>
+<Field __index="235" __sourcePath="{}/CUSTOMER/addressbookList/addressbook/country" containerType="SINGLE" label="country" name="country" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="229" __sourcePath="{}/CUSTOMER/addressbookList/addressbook/defaultBilling" containerType="SINGLE" label="defaultBilling" name="defaultBilling" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="231" __sourcePath="{}/CUSTOMER/addressbookList/addressbook/defaultShipping" containerType="SINGLE" label="defaultShipping" name="defaultShipping" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="224" __sourcePath="{}/CUSTOMER/addressbookList/addressbook/internalId" containerType="SINGLE" label="internalId" name="internalId" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="233" __sourcePath="{}/CUSTOMER/addressbookList/addressbook/isResidential" containerType="SINGLE" label="isResidential" name="isResidential" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="230" __sourcePath="{}/CUSTOMER/addressbookList/addressbook/label" containerType="SINGLE" label="label" name="label" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="238" __sourcePath="{}/CUSTOMER/addressbookList/addressbook/override" containerType="SINGLE" label="override" name="override" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="226" __sourcePath="{}/CUSTOMER/addressbookList/addressbook/phone" containerType="SINGLE" label="phone" name="phone" type="string"/>
+<Field __implementationClass="java.lang.String" __index="227" __sourcePath="{}/CUSTOMER/addressbookList/addressbook/state" containerType="SINGLE" label="state" name="state" type="string"/>
+<Field __implementationClass="java.lang.String" __index="225" __sourcePath="{}/CUSTOMER/addressbookList/addressbook/zip" containerType="SINGLE" label="zip" name="zip" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="344" __referenceCounter="0" __sourcePath="{}/CUSTOMER/contactRolesList/contactRoles" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="a9ec1427-5624-494a-8e49-d7c8175f3ee3" _parent_id="__parent_id" _type="Output" id="8d744470-efd5-42cf-b974-25aa1172e988">
+<Record fieldDelimiter="," name="contactRoles" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __implementationClass="java.lang.String" __index="356" __sourcePath="{}/CUSTOMER/contactRolesList/contactRoles/contact/externalId" containerType="SINGLE" label="externalId" name="externalId_1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="353" __sourcePath="{}/CUSTOMER/contactRolesList/contactRoles/contact/internalId" containerType="SINGLE" label="internalId" name="internalId_1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="354" __sourcePath="{}/CUSTOMER/contactRolesList/contactRoles/contact/name" containerType="SINGLE" label="name" name="name_1" type="string"/>
+<Field __index="355" __sourcePath="{}/CUSTOMER/contactRolesList/contactRoles/contact/type" containerType="SINGLE" label="type" name="type_1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="345" __sourcePath="{}/CUSTOMER/contactRolesList/contactRoles/email" containerType="SINGLE" label="email" name="email" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="351" __sourcePath="{}/CUSTOMER/contactRolesList/contactRoles/giveAccess" containerType="SINGLE" label="giveAccess" name="giveAccess" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="352" __sourcePath="{}/CUSTOMER/contactRolesList/contactRoles/password" containerType="SINGLE" label="password" name="password" type="string"/>
+<Field __implementationClass="java.lang.String" __index="344" __sourcePath="{}/CUSTOMER/contactRolesList/contactRoles/password2" containerType="SINGLE" label="password2" name="password2" type="string"/>
+<Field __implementationClass="java.lang.String" __index="349" __sourcePath="{}/CUSTOMER/contactRolesList/contactRoles/role/externalId" containerType="SINGLE" label="externalId" name="externalId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="346" __sourcePath="{}/CUSTOMER/contactRolesList/contactRoles/role/internalId" containerType="SINGLE" label="internalId" name="internalId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="347" __sourcePath="{}/CUSTOMER/contactRolesList/contactRoles/role/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __index="348" __sourcePath="{}/CUSTOMER/contactRolesList/contactRoles/role/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="350" __sourcePath="{}/CUSTOMER/contactRolesList/contactRoles/sendEmail" containerType="SINGLE" label="sendEmail" name="sendEmail" type="boolean"/>
+</Record>
+</Metadata>
+<Metadata __index="366" __referenceCounter="0" __sourcePath="{}/CUSTOMER/creditCardsList/creditCards" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="a9ec1427-5624-494a-8e49-d7c8175f3ee3" _parent_id="__parent_id" _type="Output" id="8490b5e0-67d8-4973-9315-60d17555117b">
+<Record fieldDelimiter="," name="creditCards" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __implementationClass="java.lang.String" __index="371" __sourcePath="{}/CUSTOMER/creditCardsList/creditCards/cardState/externalId" containerType="SINGLE" label="externalId" name="externalId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="368" __sourcePath="{}/CUSTOMER/creditCardsList/creditCards/cardState/internalId" containerType="SINGLE" label="internalId" name="internalId_1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="369" __sourcePath="{}/CUSTOMER/creditCardsList/creditCards/cardState/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __index="370" __sourcePath="{}/CUSTOMER/creditCardsList/creditCards/cardState/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="367" __sourcePath="{}/CUSTOMER/creditCardsList/creditCards/ccDefault" containerType="SINGLE" label="ccDefault" name="ccDefault" type="boolean"/>
+<Field __dmType="Calendar" __implementationClass="javax.xml.datatype.XMLGregorianCalendar" __index="377" __sourcePath="{}/CUSTOMER/creditCardsList/creditCards/ccExpireDate" containerType="SINGLE" label="ccExpireDate" name="ccExpireDate" type="string"/>
+<Field __implementationClass="java.lang.String" __index="376" __sourcePath="{}/CUSTOMER/creditCardsList/creditCards/ccMemo" containerType="SINGLE" label="ccMemo" name="ccMemo" type="string"/>
+<Field __implementationClass="java.lang.String" __index="372" __sourcePath="{}/CUSTOMER/creditCardsList/creditCards/ccName" containerType="SINGLE" label="ccName" name="ccName" type="string"/>
+<Field __implementationClass="java.lang.String" __index="373" __sourcePath="{}/CUSTOMER/creditCardsList/creditCards/ccNumber" containerType="SINGLE" label="ccNumber" name="ccNumber" type="string"/>
+<Field __implementationClass="java.lang.String" __index="374" __sourcePath="{}/CUSTOMER/creditCardsList/creditCards/debitcardIssueNo" containerType="SINGLE" label="debitcardIssueNo" name="debitcardIssueNo" type="string"/>
+<Field __implementationClass="java.lang.String" __index="366" __sourcePath="{}/CUSTOMER/creditCardsList/creditCards/internalId" containerType="SINGLE" label="internalId" name="internalId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="382" __sourcePath="{}/CUSTOMER/creditCardsList/creditCards/paymentMethod/externalId" containerType="SINGLE" label="externalId" name="externalId_1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="379" __sourcePath="{}/CUSTOMER/creditCardsList/creditCards/paymentMethod/internalId" containerType="SINGLE" label="internalId" name="internalId_2" type="string"/>
+<Field __implementationClass="java.lang.String" __index="380" __sourcePath="{}/CUSTOMER/creditCardsList/creditCards/paymentMethod/name" containerType="SINGLE" label="name" name="name_1" type="string"/>
+<Field __index="381" __sourcePath="{}/CUSTOMER/creditCardsList/creditCards/paymentMethod/type" containerType="SINGLE" label="type" name="type_1" type="string"/>
+<Field __dmType="Calendar" __implementationClass="javax.xml.datatype.XMLGregorianCalendar" __index="375" __sourcePath="{}/CUSTOMER/creditCardsList/creditCards/stateFrom" containerType="SINGLE" label="stateFrom" name="stateFrom" type="string"/>
+<Field __dmType="Calendar" __implementationClass="javax.xml.datatype.XMLGregorianCalendar" __index="378" __sourcePath="{}/CUSTOMER/creditCardsList/creditCards/validfrom" containerType="SINGLE" label="validfrom" name="validfrom" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="121" __referenceCounter="0" __sourcePath="{}/CUSTOMER/currencyList/currency" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="a9ec1427-5624-494a-8e49-d7c8175f3ee3" _parent_id="__parent_id" _type="Output" id="9e69f633-6058-43e9-b0cb-3718064e85a1">
+<Record fieldDelimiter="," name="currency" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __implementationClass="java.lang.Number" __index="122" __sourcePath="{}/CUSTOMER/currencyList/currency/balance" containerType="SINGLE" label="balance" name="balance" type="number"/>
+<Field __implementationClass="java.lang.Number" __index="123" __sourcePath="{}/CUSTOMER/currencyList/currency/consolBalance" containerType="SINGLE" label="consolBalance" name="consolBalance" type="number"/>
+<Field __implementationClass="java.lang.Number" __index="130" __sourcePath="{}/CUSTOMER/currencyList/currency/consolDepositBalance" containerType="SINGLE" label="consolDepositBalance" name="consolDepositBalance" type="number"/>
+<Field __implementationClass="java.lang.Number" __index="124" __sourcePath="{}/CUSTOMER/currencyList/currency/consolOverdueBalance" containerType="SINGLE" label="consolOverdueBalance" name="consolOverdueBalance" type="number"/>
+<Field __implementationClass="java.lang.Number" __index="127" __sourcePath="{}/CUSTOMER/currencyList/currency/consolUnbilledOrders" containerType="SINGLE" label="consolUnbilledOrders" name="consolUnbilledOrders" type="number"/>
+<Field __implementationClass="java.lang.String" __index="135" __sourcePath="{}/CUSTOMER/currencyList/currency/currency/externalId" containerType="SINGLE" label="externalId" name="externalId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="132" __sourcePath="{}/CUSTOMER/currencyList/currency/currency/internalId" containerType="SINGLE" label="internalId" name="internalId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="133" __sourcePath="{}/CUSTOMER/currencyList/currency/currency/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __index="134" __sourcePath="{}/CUSTOMER/currencyList/currency/currency/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __implementationClass="java.lang.Number" __index="129" __sourcePath="{}/CUSTOMER/currencyList/currency/depositBalance" containerType="SINGLE" label="depositBalance" name="depositBalance" type="number"/>
+<Field __implementationClass="java.lang.String" __index="125" __sourcePath="{}/CUSTOMER/currencyList/currency/displaySymbol" containerType="SINGLE" label="displaySymbol" name="displaySymbol" type="string"/>
+<Field __implementationClass="java.lang.Number" __index="126" __sourcePath="{}/CUSTOMER/currencyList/currency/overdueBalance" containerType="SINGLE" label="overdueBalance" name="overdueBalance" type="number"/>
+<Field __implementationClass="java.lang.Boolean" __index="128" __sourcePath="{}/CUSTOMER/currencyList/currency/overrideCurrencyFormat" containerType="SINGLE" label="overrideCurrencyFormat" name="overrideCurrencyFormat" type="boolean"/>
+<Field __index="121" __sourcePath="{}/CUSTOMER/currencyList/currency/symbolPlacement" containerType="SINGLE" label="symbolPlacement" name="symbolPlacement" type="string"/>
+<Field __implementationClass="java.lang.Number" __index="131" __sourcePath="{}/CUSTOMER/currencyList/currency/unbilledOrders" containerType="SINGLE" label="unbilledOrders" name="unbilledOrders" type="number"/>
+</Record>
+</Metadata>
+<Metadata __index="0" __referenceCounter="1" __sourcePath="{}/CUSTOMER" _dataStructure="OBJECT" _id="__id" _type="Output" id="a9ec1427-5624-494a-8e49-d7c8175f3ee3">
+<Record fieldDelimiter="," name="CUSTOMER" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __implementationClass="java.lang.String" __index="262" __sourcePath="{}/CUSTOMER/accessRole/externalId" containerType="SINGLE" label="externalId" name="externalId_14" type="string"/>
+<Field __implementationClass="java.lang.String" __index="259" __sourcePath="{}/CUSTOMER/accessRole/internalId" containerType="SINGLE" label="internalId" name="internalId_13" type="string"/>
+<Field __implementationClass="java.lang.String" __index="260" __sourcePath="{}/CUSTOMER/accessRole/name" containerType="SINGLE" label="name" name="name_14" type="string"/>
+<Field __index="261" __sourcePath="{}/CUSTOMER/accessRole/type" containerType="SINGLE" label="type" name="type_13" type="string"/>
+<Field __implementationClass="java.lang.String" __index="279" __sourcePath="{}/CUSTOMER/accountNumber" containerType="SINGLE" label="accountNumber" name="accountNumber" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="241" __sourcePath="{}/CUSTOMER/addressbookList/replaceAll" containerType="SINGLE" label="replaceAll" name="replaceAll_6" type="boolean"/>
+<Field __implementationClass="java.lang.Number" __index="243" __sourcePath="{}/CUSTOMER/aging" containerType="SINGLE" label="aging" name="aging" type="number"/>
+<Field __implementationClass="java.lang.String" __index="274" __sourcePath="{}/CUSTOMER/altEmail" containerType="SINGLE" label="altEmail" name="altEmail" type="string"/>
+<Field __implementationClass="java.lang.String" __index="256" __sourcePath="{}/CUSTOMER/altName" containerType="SINGLE" label="altName" name="altName" type="string"/>
+<Field __implementationClass="java.lang.String" __index="146" __sourcePath="{}/CUSTOMER/altPhone" containerType="SINGLE" label="altPhone" name="altPhone" type="string"/>
+<Field __implementationClass="java.lang.Number" __index="278" __sourcePath="{}/CUSTOMER/balance" containerType="SINGLE" label="balance" name="balance" type="number"/>
+<Field __implementationClass="java.lang.Boolean" __index="266" __sourcePath="{}/CUSTOMER/billPay" containerType="SINGLE" label="billPay" name="billPay" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="338" __sourcePath="{}/CUSTOMER/buyingReason/externalId" containerType="SINGLE" label="externalId" name="externalId_26" type="string"/>
+<Field __implementationClass="java.lang.String" __index="335" __sourcePath="{}/CUSTOMER/buyingReason/internalId" containerType="SINGLE" label="internalId" name="internalId_25" type="string"/>
+<Field __implementationClass="java.lang.String" __index="336" __sourcePath="{}/CUSTOMER/buyingReason/name" containerType="SINGLE" label="name" name="name_26" type="string"/>
+<Field __index="337" __sourcePath="{}/CUSTOMER/buyingReason/type" containerType="SINGLE" label="type" name="type_25" type="string"/>
+<Field __implementationClass="java.lang.String" __index="296" __sourcePath="{}/CUSTOMER/buyingTimeFrame/externalId" containerType="SINGLE" label="externalId" name="externalId_18" type="string"/>
+<Field __implementationClass="java.lang.String" __index="293" __sourcePath="{}/CUSTOMER/buyingTimeFrame/internalId" containerType="SINGLE" label="internalId" name="internalId_17" type="string"/>
+<Field __implementationClass="java.lang.String" __index="294" __sourcePath="{}/CUSTOMER/buyingTimeFrame/name" containerType="SINGLE" label="name" name="name_18" type="string"/>
+<Field __index="295" __sourcePath="{}/CUSTOMER/buyingTimeFrame/type" containerType="SINGLE" label="type" name="type_17" type="string"/>
+<Field __implementationClass="java.lang.String" __index="144" __sourcePath="{}/CUSTOMER/campaignCategory/externalId" containerType="SINGLE" label="externalId" name="externalId_5" type="string"/>
+<Field __implementationClass="java.lang.String" __index="141" __sourcePath="{}/CUSTOMER/campaignCategory/internalId" containerType="SINGLE" label="internalId" name="internalId_5" type="string"/>
+<Field __implementationClass="java.lang.String" __index="142" __sourcePath="{}/CUSTOMER/campaignCategory/name" containerType="SINGLE" label="name" name="name_6" type="string"/>
+<Field __index="143" __sourcePath="{}/CUSTOMER/campaignCategory/type" containerType="SINGLE" label="type" name="type_5" type="string"/>
+<Field __implementationClass="java.lang.String" __index="160" __sourcePath="{}/CUSTOMER/category/externalId" containerType="SINGLE" label="externalId" name="externalId_8" type="string"/>
+<Field __implementationClass="java.lang.String" __index="157" __sourcePath="{}/CUSTOMER/category/internalId" containerType="SINGLE" label="internalId" name="internalId_8" type="string"/>
+<Field __implementationClass="java.lang.String" __index="158" __sourcePath="{}/CUSTOMER/category/name" containerType="SINGLE" label="name" name="name_9" type="string"/>
+<Field __index="159" __sourcePath="{}/CUSTOMER/category/type" containerType="SINGLE" label="type" name="type_8" type="string"/>
+<Field __implementationClass="java.lang.String" __index="334" __sourcePath="{}/CUSTOMER/clickStream" containerType="SINGLE" label="clickStream" name="clickStream" type="string"/>
+<Field __implementationClass="java.lang.String" __index="263" __sourcePath="{}/CUSTOMER/comments" containerType="SINGLE" label="comments" name="comments" type="string"/>
+<Field __implementationClass="java.lang.String" __index="156" __sourcePath="{}/CUSTOMER/companyName" containerType="SINGLE" label="companyName" name="companyName" type="string"/>
+<Field __implementationClass="java.lang.Number" __index="314" __sourcePath="{}/CUSTOMER/consolAging" containerType="SINGLE" label="consolAging" name="consolAging" type="number"/>
+<Field __implementationClass="java.lang.Number" __index="383" __sourcePath="{}/CUSTOMER/consolBalance" containerType="SINGLE" label="consolBalance" name="consolBalance" type="number"/>
+<Field __implementationClass="java.lang.Number" __index="292" __sourcePath="{}/CUSTOMER/consolDaysOverdue" containerType="SINGLE" label="consolDaysOverdue" name="consolDaysOverdue" type="number"/>
+<Field __implementationClass="java.lang.Number" __index="105" __sourcePath="{}/CUSTOMER/consolDepositBalance" containerType="SINGLE" label="consolDepositBalance" name="consolDepositBalance" type="number"/>
+<Field __implementationClass="java.lang.Number" __index="329" __sourcePath="{}/CUSTOMER/consolOverdueBalance" containerType="SINGLE" label="consolOverdueBalance" name="consolOverdueBalance" type="number"/>
+<Field __implementationClass="java.lang.Number" __index="267" __sourcePath="{}/CUSTOMER/consolUnbilledOrders" containerType="SINGLE" label="consolUnbilledOrders" name="consolUnbilledOrders" type="number"/>
+<Field __implementationClass="java.lang.Boolean" __index="343" __sourcePath="{}/CUSTOMER/contactRolesList/replaceAll" containerType="SINGLE" label="replaceAll" name="replaceAll_8" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="257" __sourcePath="{}/CUSTOMER/contribPct" containerType="SINGLE" label="contribPct" name="contribPct" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="365" __sourcePath="{}/CUSTOMER/creditCardsList/replaceAll" containerType="SINGLE" label="replaceAll" name="replaceAll_9" type="boolean"/>
+<Field __index="264" __sourcePath="{}/CUSTOMER/creditHoldOverride" containerType="SINGLE" label="creditHoldOverride" name="creditHoldOverride" type="string"/>
+<Field __implementationClass="java.lang.Number" __index="273" __sourcePath="{}/CUSTOMER/creditLimit" containerType="SINGLE" label="creditLimit" name="creditLimit" type="number"/>
+<Field __implementationClass="java.lang.String" __index="218" __sourcePath="{}/CUSTOMER/currency/externalId" containerType="SINGLE" label="externalId" name="externalId_13" type="string"/>
+<Field __implementationClass="java.lang.String" __index="215" __sourcePath="{}/CUSTOMER/currency/internalId" containerType="SINGLE" label="internalId" name="internalId_12" type="string"/>
+<Field __implementationClass="java.lang.String" __index="216" __sourcePath="{}/CUSTOMER/currency/name" containerType="SINGLE" label="name" name="name_13" type="string"/>
+<Field __index="217" __sourcePath="{}/CUSTOMER/currency/type" containerType="SINGLE" label="type" name="type_12" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="120" __sourcePath="{}/CUSTOMER/currencyList/replaceAll" containerType="SINGLE" label="replaceAll" name="replaceAll_2" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="324" __sourcePath="{}/CUSTOMER/customForm/externalId" containerType="SINGLE" label="externalId" name="externalId_23" type="string"/>
+<Field __implementationClass="java.lang.String" __index="321" __sourcePath="{}/CUSTOMER/customForm/internalId" containerType="SINGLE" label="internalId" name="internalId_22" type="string"/>
+<Field __implementationClass="java.lang.String" __index="322" __sourcePath="{}/CUSTOMER/customForm/name" containerType="SINGLE" label="name" name="name_23" type="string"/>
+<Field __index="323" __sourcePath="{}/CUSTOMER/customForm/type" containerType="SINGLE" label="type" name="type_22" type="string"/>
+<Field __dmType="Calendar" __implementationClass="javax.xml.datatype.XMLGregorianCalendar" __index="387" __sourcePath="{}/CUSTOMER/dateCreated" containerType="SINGLE" label="dateCreated" name="dateCreated" type="string"/>
+<Field __implementationClass="java.lang.Number" __index="384" __sourcePath="{}/CUSTOMER/daysOverdue" containerType="SINGLE" label="daysOverdue" name="daysOverdue" type="number"/>
+<Field __implementationClass="java.lang.String" __index="385" __sourcePath="{}/CUSTOMER/defaultAddress" containerType="SINGLE" label="defaultAddress" name="defaultAddress" type="string"/>
+<Field __implementationClass="java.lang.Number" __index="342" __sourcePath="{}/CUSTOMER/defaultOrderPriority" containerType="SINGLE" label="defaultOrderPriority" name="defaultOrderPriority" type="number"/>
+<Field __implementationClass="java.lang.Number" __index="145" __sourcePath="{}/CUSTOMER/depositBalance" containerType="SINGLE" label="depositBalance" name="depositBalance" type="number"/>
+<Field __implementationClass="java.lang.String" __index="317" __sourcePath="{}/CUSTOMER/displaySymbol" containerType="SINGLE" label="displaySymbol" name="displaySymbol" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="211" __sourcePath="{}/CUSTOMER/downloadList/replaceAll" containerType="SINGLE" label="replaceAll" name="replaceAll_5" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="309" __sourcePath="{}/CUSTOMER/drAccount/externalId" containerType="SINGLE" label="externalId" name="externalId_21" type="string"/>
+<Field __implementationClass="java.lang.String" __index="306" __sourcePath="{}/CUSTOMER/drAccount/internalId" containerType="SINGLE" label="internalId" name="internalId_20" type="string"/>
+<Field __implementationClass="java.lang.String" __index="307" __sourcePath="{}/CUSTOMER/drAccount/name" containerType="SINGLE" label="name" name="name_21" type="string"/>
+<Field __index="308" __sourcePath="{}/CUSTOMER/drAccount/type" containerType="SINGLE" label="type" name="type_20" type="string"/>
+<Field __implementationClass="java.lang.String" __index="316" __sourcePath="{}/CUSTOMER/email" containerType="SINGLE" label="email" name="email" type="string"/>
+<Field __index="0" __sourcePath="{}/CUSTOMER/emailPreference" containerType="SINGLE" label="emailPreference" name="emailPreference" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="24" __sourcePath="{}/CUSTOMER/emailTransactions" containerType="SINGLE" label="emailTransactions" name="emailTransactions" type="boolean"/>
+<Field __dmType="Calendar" __implementationClass="javax.xml.datatype.XMLGregorianCalendar" __index="23" __sourcePath="{}/CUSTOMER/endDate" containerType="SINGLE" label="endDate" name="endDate" type="string"/>
+<Field __implementationClass="java.lang.String" __index="203" __sourcePath="{}/CUSTOMER/entityId" containerType="SINGLE" label="entityId" name="entityId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="360" __sourcePath="{}/CUSTOMER/entityStatus/externalId" containerType="SINGLE" label="externalId" name="externalId_27" type="string"/>
+<Field __implementationClass="java.lang.String" __index="357" __sourcePath="{}/CUSTOMER/entityStatus/internalId" containerType="SINGLE" label="internalId" name="internalId_26" type="string"/>
+<Field __implementationClass="java.lang.String" __index="358" __sourcePath="{}/CUSTOMER/entityStatus/name" containerType="SINGLE" label="name" name="name_27" type="string"/>
+<Field __index="359" __sourcePath="{}/CUSTOMER/entityStatus/type" containerType="SINGLE" label="type" name="type_26" type="string"/>
+<Field __implementationClass="java.lang.Number" __index="223" __sourcePath="{}/CUSTOMER/estimatedBudget" containerType="SINGLE" label="estimatedBudget" name="estimatedBudget" type="number"/>
+<Field __implementationClass="java.lang.String" __index="213" __sourcePath="{}/CUSTOMER/externalId" containerType="SINGLE" label="externalId" name="externalId_12" type="string"/>
+<Field __implementationClass="java.lang.String" __index="290" __sourcePath="{}/CUSTOMER/fax" containerType="SINGLE" label="fax" name="fax" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="364" __sourcePath="{}/CUSTOMER/faxTransactions" containerType="SINGLE" label="faxTransactions" name="faxTransactions" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="361" __sourcePath="{}/CUSTOMER/firstName" containerType="SINGLE" label="firstName" name="firstName" type="string"/>
+<Field __dmType="Calendar" __implementationClass="javax.xml.datatype.XMLGregorianCalendar" __index="22" __sourcePath="{}/CUSTOMER/firstVisit" containerType="SINGLE" label="firstVisit" name="firstVisit" type="string"/>
+<Field __implementationClass="java.lang.String" __index="300" __sourcePath="{}/CUSTOMER/fxAccount/externalId" containerType="SINGLE" label="externalId" name="externalId_19" type="string"/>
+<Field __implementationClass="java.lang.String" __index="297" __sourcePath="{}/CUSTOMER/fxAccount/internalId" containerType="SINGLE" label="internalId" name="internalId_18" type="string"/>
+<Field __implementationClass="java.lang.String" __index="298" __sourcePath="{}/CUSTOMER/fxAccount/name" containerType="SINGLE" label="name" name="name_19" type="string"/>
+<Field __index="299" __sourcePath="{}/CUSTOMER/fxAccount/type" containerType="SINGLE" label="type" name="type_18" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="25" __sourcePath="{}/CUSTOMER/giveAccess" containerType="SINGLE" label="giveAccess" name="giveAccess" type="boolean"/>
+<Field __index="155" __sourcePath="{}/CUSTOMER/globalSubscriptionStatus" containerType="SINGLE" label="globalSubscriptionStatus" name="globalSubscriptionStatus" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="114" __sourcePath="{}/CUSTOMER/groupPricingList/replaceAll" containerType="SINGLE" label="replaceAll" name="replaceAll_1" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="275" __sourcePath="{}/CUSTOMER/homePhone" containerType="SINGLE" label="homePhone" name="homePhone" type="string"/>
+<Field __implementationClass="java.lang.String" __index="150" __sourcePath="{}/CUSTOMER/image/externalId" containerType="SINGLE" label="externalId" name="externalId_6" type="string"/>
+<Field __implementationClass="java.lang.String" __index="147" __sourcePath="{}/CUSTOMER/image/internalId" containerType="SINGLE" label="internalId" name="internalId_6" type="string"/>
+<Field __implementationClass="java.lang.String" __index="148" __sourcePath="{}/CUSTOMER/image/name" containerType="SINGLE" label="name" name="name_7" type="string"/>
+<Field __index="149" __sourcePath="{}/CUSTOMER/image/type" containerType="SINGLE" label="type" name="type_6" type="string"/>
+<Field __implementationClass="java.lang.String" __index="363" __sourcePath="{}/CUSTOMER/internalId" containerType="SINGLE" label="internalId" name="internalId_27" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="268" __sourcePath="{}/CUSTOMER/isBudgetApproved" containerType="SINGLE" label="isBudgetApproved" name="isBudgetApproved" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="100" __sourcePath="{}/CUSTOMER/isInactive" containerType="SINGLE" label="isInactive" name="isInactive" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="219" __sourcePath="{}/CUSTOMER/isPerson" containerType="SINGLE" label="isPerson" name="isPerson" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="177" __sourcePath="{}/CUSTOMER/itemPricingList/replaceAll" containerType="SINGLE" label="replaceAll" name="replaceAll_3" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="291" __sourcePath="{}/CUSTOMER/keywords" containerType="SINGLE" label="keywords" name="keywords" type="string"/>
+<Field __index="178" __sourcePath="{}/CUSTOMER/language" containerType="SINGLE" label="language" name="language" type="string"/>
+<Field __dmType="Calendar" __implementationClass="javax.xml.datatype.XMLGregorianCalendar" __index="388" __sourcePath="{}/CUSTOMER/lastModifiedDate" containerType="SINGLE" label="lastModifiedDate" name="lastModifiedDate" type="string"/>
+<Field __implementationClass="java.lang.String" __index="289" __sourcePath="{}/CUSTOMER/lastName" containerType="SINGLE" label="lastName" name="lastName" type="string"/>
+<Field __implementationClass="java.lang.String" __index="222" __sourcePath="{}/CUSTOMER/lastPageVisited" containerType="SINGLE" label="lastPageVisited" name="lastPageVisited" type="string"/>
+<Field __dmType="Calendar" __implementationClass="javax.xml.datatype.XMLGregorianCalendar" __index="254" __sourcePath="{}/CUSTOMER/lastVisit" containerType="SINGLE" label="lastVisit" name="lastVisit" type="string"/>
+<Field __implementationClass="java.lang.String" __index="19" __sourcePath="{}/CUSTOMER/leadSource/externalId" containerType="SINGLE" label="externalId" name="externalId_1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="16" __sourcePath="{}/CUSTOMER/leadSource/internalId" containerType="SINGLE" label="internalId" name="internalId_1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="17" __sourcePath="{}/CUSTOMER/leadSource/name" containerType="SINGLE" label="name" name="name_1" type="string"/>
+<Field __index="18" __sourcePath="{}/CUSTOMER/leadSource/type" containerType="SINGLE" label="type" name="type_1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="136" __sourcePath="{}/CUSTOMER/middleName" containerType="SINGLE" label="middleName" name="middleName" type="string"/>
+<Field __implementationClass="java.lang.String" __index="315" __sourcePath="{}/CUSTOMER/mobilePhone" containerType="SINGLE" label="mobilePhone" name="mobilePhone" type="string"/>
+<Field __index="20" __sourcePath="{}/CUSTOMER/monthlyClosing" containerType="SINGLE" label="monthlyClosing" name="monthlyClosing" type="string"/>
+<Field __index="212" __sourcePath="{}/CUSTOMER/negativeNumberFormat" containerType="SINGLE" label="negativeNumberFormat" name="negativeNumberFormat" type="string"/>
+<Field __index="137" __sourcePath="{}/CUSTOMER/nullFieldList/name" containerType="list" label="name" name="name_5" type="string"/>
+<Field __index="318" __sourcePath="{}/CUSTOMER/numberFormat" containerType="SINGLE" label="numberFormat" name="numberFormat" type="string"/>
+<Field __implementationClass="java.lang.Number" __index="162" __sourcePath="{}/CUSTOMER/openingBalance" containerType="SINGLE" label="openingBalance" name="openingBalance" type="number"/>
+<Field __implementationClass="java.lang.String" __index="182" __sourcePath="{}/CUSTOMER/openingBalanceAccount/externalId" containerType="SINGLE" label="externalId" name="externalId_9" type="string"/>
+<Field __implementationClass="java.lang.String" __index="179" __sourcePath="{}/CUSTOMER/openingBalanceAccount/internalId" containerType="SINGLE" label="internalId" name="internalId_9" type="string"/>
+<Field __implementationClass="java.lang.String" __index="180" __sourcePath="{}/CUSTOMER/openingBalanceAccount/name" containerType="SINGLE" label="name" name="name_10" type="string"/>
+<Field __index="181" __sourcePath="{}/CUSTOMER/openingBalanceAccount/type" containerType="SINGLE" label="type" name="type_9" type="string"/>
+<Field __dmType="Calendar" __implementationClass="javax.xml.datatype.XMLGregorianCalendar" __index="341" __sourcePath="{}/CUSTOMER/openingBalanceDate" containerType="SINGLE" label="openingBalanceDate" name="openingBalanceDate" type="string"/>
+<Field __implementationClass="java.lang.Number" __index="21" __sourcePath="{}/CUSTOMER/overdueBalance" containerType="SINGLE" label="overdueBalance" name="overdueBalance" type="number"/>
+<Field __implementationClass="java.lang.Boolean" __index="246" __sourcePath="{}/CUSTOMER/overrideCurrencyFormat" containerType="SINGLE" label="overrideCurrencyFormat" name="overrideCurrencyFormat" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="154" __sourcePath="{}/CUSTOMER/parent/externalId" containerType="SINGLE" label="externalId" name="externalId_7" type="string"/>
+<Field __implementationClass="java.lang.String" __index="151" __sourcePath="{}/CUSTOMER/parent/internalId" containerType="SINGLE" label="internalId" name="internalId_7" type="string"/>
+<Field __implementationClass="java.lang.String" __index="152" __sourcePath="{}/CUSTOMER/parent/name" containerType="SINGLE" label="name" name="name_8" type="string"/>
+<Field __index="153" __sourcePath="{}/CUSTOMER/parent/type" containerType="SINGLE" label="type" name="type_7" type="string"/>
+<Field __implementationClass="java.lang.String" __index="118" __sourcePath="{}/CUSTOMER/partner/externalId" containerType="SINGLE" label="externalId" name="externalId_4" type="string"/>
+<Field __implementationClass="java.lang.String" __index="115" __sourcePath="{}/CUSTOMER/partner/internalId" containerType="SINGLE" label="internalId" name="internalId_4" type="string"/>
+<Field __implementationClass="java.lang.String" __index="116" __sourcePath="{}/CUSTOMER/partner/name" containerType="SINGLE" label="name" name="name_4" type="string"/>
+<Field __index="117" __sourcePath="{}/CUSTOMER/partner/type" containerType="SINGLE" label="type" name="type_4" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="202" __sourcePath="{}/CUSTOMER/partnersList/replaceAll" containerType="SINGLE" label="replaceAll" name="replaceAll_4" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="276" __sourcePath="{}/CUSTOMER/password" containerType="SINGLE" label="password" name="password" type="string"/>
+<Field __implementationClass="java.lang.String" __index="255" __sourcePath="{}/CUSTOMER/password2" containerType="SINGLE" label="password2" name="password2" type="string"/>
+<Field __implementationClass="java.lang.String" __index="265" __sourcePath="{}/CUSTOMER/phone" containerType="SINGLE" label="phone" name="phone" type="string"/>
+<Field __implementationClass="java.lang.String" __index="386" __sourcePath="{}/CUSTOMER/phoneticName" containerType="SINGLE" label="phoneticName" name="phoneticName" type="string"/>
+<Field __implementationClass="java.lang.String" __index="187" __sourcePath="{}/CUSTOMER/prefCCProcessor/externalId" containerType="SINGLE" label="externalId" name="externalId_10" type="string"/>
+<Field __implementationClass="java.lang.String" __index="184" __sourcePath="{}/CUSTOMER/prefCCProcessor/internalId" containerType="SINGLE" label="internalId" name="internalId_10" type="string"/>
+<Field __implementationClass="java.lang.String" __index="185" __sourcePath="{}/CUSTOMER/prefCCProcessor/name" containerType="SINGLE" label="name" name="name_11" type="string"/>
+<Field __index="186" __sourcePath="{}/CUSTOMER/prefCCProcessor/type" containerType="SINGLE" label="type" name="type_10" type="string"/>
+<Field __implementationClass="java.lang.String" __index="4" __sourcePath="{}/CUSTOMER/priceLevel/externalId" containerType="SINGLE" label="externalId" name="externalId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="1" __sourcePath="{}/CUSTOMER/priceLevel/internalId" containerType="SINGLE" label="internalId" name="internalId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="2" __sourcePath="{}/CUSTOMER/priceLevel/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __index="3" __sourcePath="{}/CUSTOMER/priceLevel/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __implementationClass="java.lang.String" __index="277" __sourcePath="{}/CUSTOMER/printOnCheckAs" containerType="SINGLE" label="printOnCheckAs" name="printOnCheckAs" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="362" __sourcePath="{}/CUSTOMER/printTransactions" containerType="SINGLE" label="printTransactions" name="printTransactions" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="283" __sourcePath="{}/CUSTOMER/receivablesAccount/externalId" containerType="SINGLE" label="externalId" name="externalId_16" type="string"/>
+<Field __implementationClass="java.lang.String" __index="280" __sourcePath="{}/CUSTOMER/receivablesAccount/internalId" containerType="SINGLE" label="internalId" name="internalId_15" type="string"/>
+<Field __implementationClass="java.lang.String" __index="281" __sourcePath="{}/CUSTOMER/receivablesAccount/name" containerType="SINGLE" label="name" name="name_16" type="string"/>
+<Field __index="282" __sourcePath="{}/CUSTOMER/receivablesAccount/type" containerType="SINGLE" label="type" name="type_15" type="string"/>
+<Field __implementationClass="java.lang.String" __index="161" __sourcePath="{}/CUSTOMER/referrer" containerType="SINGLE" label="referrer" name="referrer" type="string"/>
+<Field __implementationClass="java.lang.Number" __index="245" __sourcePath="{}/CUSTOMER/reminderDays" containerType="SINGLE" label="reminderDays" name="reminderDays" type="number"/>
+<Field __implementationClass="java.lang.String" __index="288" __sourcePath="{}/CUSTOMER/representingSubsidiary/externalId" containerType="SINGLE" label="externalId" name="externalId_17" type="string"/>
+<Field __implementationClass="java.lang.String" __index="285" __sourcePath="{}/CUSTOMER/representingSubsidiary/internalId" containerType="SINGLE" label="internalId" name="internalId_16" type="string"/>
+<Field __implementationClass="java.lang.String" __index="286" __sourcePath="{}/CUSTOMER/representingSubsidiary/name" containerType="SINGLE" label="name" name="name_17" type="string"/>
+<Field __index="287" __sourcePath="{}/CUSTOMER/representingSubsidiary/type" containerType="SINGLE" label="type" name="type_16" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="284" __sourcePath="{}/CUSTOMER/requirePwdChange" containerType="SINGLE" label="requirePwdChange" name="requirePwdChange" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="138" __sourcePath="{}/CUSTOMER/resaleNumber" containerType="SINGLE" label="resaleNumber" name="resaleNumber" type="string"/>
+<Field __implementationClass="java.lang.String" __index="305" __sourcePath="{}/CUSTOMER/salesGroup/externalId" containerType="SINGLE" label="externalId" name="externalId_20" type="string"/>
+<Field __implementationClass="java.lang.String" __index="302" __sourcePath="{}/CUSTOMER/salesGroup/internalId" containerType="SINGLE" label="internalId" name="internalId_19" type="string"/>
+<Field __implementationClass="java.lang.String" __index="303" __sourcePath="{}/CUSTOMER/salesGroup/name" containerType="SINGLE" label="name" name="name_20" type="string"/>
+<Field __index="304" __sourcePath="{}/CUSTOMER/salesGroup/type" containerType="SINGLE" label="type" name="type_19" type="string"/>
+<Field __implementationClass="java.lang.String" __index="30" __sourcePath="{}/CUSTOMER/salesReadiness/externalId" containerType="SINGLE" label="externalId" name="externalId_2" type="string"/>
+<Field __implementationClass="java.lang.String" __index="27" __sourcePath="{}/CUSTOMER/salesReadiness/internalId" containerType="SINGLE" label="internalId" name="internalId_2" type="string"/>
+<Field __implementationClass="java.lang.String" __index="28" __sourcePath="{}/CUSTOMER/salesReadiness/name" containerType="SINGLE" label="name" name="name_2" type="string"/>
+<Field __index="29" __sourcePath="{}/CUSTOMER/salesReadiness/type" containerType="SINGLE" label="type" name="type_2" type="string"/>
+<Field __implementationClass="java.lang.String" __index="313" __sourcePath="{}/CUSTOMER/salesRep/externalId" containerType="SINGLE" label="externalId" name="externalId_22" type="string"/>
+<Field __implementationClass="java.lang.String" __index="310" __sourcePath="{}/CUSTOMER/salesRep/internalId" containerType="SINGLE" label="internalId" name="internalId_21" type="string"/>
+<Field __implementationClass="java.lang.String" __index="311" __sourcePath="{}/CUSTOMER/salesRep/name" containerType="SINGLE" label="name" name="name_22" type="string"/>
+<Field __index="312" __sourcePath="{}/CUSTOMER/salesRep/type" containerType="SINGLE" label="type" name="type_21" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="15" __sourcePath="{}/CUSTOMER/salesTeamList/replaceAll" containerType="SINGLE" label="replaceAll" name="replaceAll" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="258" __sourcePath="{}/CUSTOMER/salutation" containerType="SINGLE" label="salutation" name="salutation" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="320" __sourcePath="{}/CUSTOMER/sendEmail" containerType="SINGLE" label="sendEmail" name="sendEmail" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="140" __sourcePath="{}/CUSTOMER/shipComplete" containerType="SINGLE" label="shipComplete" name="shipComplete" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="333" __sourcePath="{}/CUSTOMER/shippingItem/externalId" containerType="SINGLE" label="externalId" name="externalId_25" type="string"/>
+<Field __implementationClass="java.lang.String" __index="330" __sourcePath="{}/CUSTOMER/shippingItem/internalId" containerType="SINGLE" label="internalId" name="internalId_24" type="string"/>
+<Field __implementationClass="java.lang.String" __index="331" __sourcePath="{}/CUSTOMER/shippingItem/name" containerType="SINGLE" label="name" name="name_25" type="string"/>
+<Field __index="332" __sourcePath="{}/CUSTOMER/shippingItem/type" containerType="SINGLE" label="type" name="type_24" type="string"/>
+<Field __index="339" __sourcePath="{}/CUSTOMER/stage" containerType="SINGLE" label="stage" name="stage" type="string"/>
+<Field __dmType="Calendar" __implementationClass="javax.xml.datatype.XMLGregorianCalendar" __index="183" __sourcePath="{}/CUSTOMER/startDate" containerType="SINGLE" label="startDate" name="startDate" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="253" __sourcePath="{}/CUSTOMER/subscriptionsList/replaceAll" containerType="SINGLE" label="replaceAll" name="replaceAll_7" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="328" __sourcePath="{}/CUSTOMER/subsidiary/externalId" containerType="SINGLE" label="externalId" name="externalId_24" type="string"/>
+<Field __implementationClass="java.lang.String" __index="325" __sourcePath="{}/CUSTOMER/subsidiary/internalId" containerType="SINGLE" label="internalId" name="internalId_23" type="string"/>
+<Field __implementationClass="java.lang.String" __index="326" __sourcePath="{}/CUSTOMER/subsidiary/name" containerType="SINGLE" label="name" name="name_24" type="string"/>
+<Field __index="327" __sourcePath="{}/CUSTOMER/subsidiary/type" containerType="SINGLE" label="type" name="type_23" type="string"/>
+<Field __index="220" __sourcePath="{}/CUSTOMER/symbolPlacement" containerType="SINGLE" label="symbolPlacement" name="symbolPlacement" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="319" __sourcePath="{}/CUSTOMER/syncPartnerTeams" containerType="SINGLE" label="syncPartnerTeams" name="syncPartnerTeams" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="119" __sourcePath="{}/CUSTOMER/taxExempt" containerType="SINGLE" label="taxExempt" name="taxExempt" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="104" __sourcePath="{}/CUSTOMER/taxItem/externalId" containerType="SINGLE" label="externalId" name="externalId_3" type="string"/>
+<Field __implementationClass="java.lang.String" __index="101" __sourcePath="{}/CUSTOMER/taxItem/internalId" containerType="SINGLE" label="internalId" name="internalId_3" type="string"/>
+<Field __implementationClass="java.lang.String" __index="102" __sourcePath="{}/CUSTOMER/taxItem/name" containerType="SINGLE" label="name" name="name_3" type="string"/>
+<Field __index="103" __sourcePath="{}/CUSTOMER/taxItem/type" containerType="SINGLE" label="type" name="type_3" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="139" __sourcePath="{}/CUSTOMER/taxable" containerType="SINGLE" label="taxable" name="taxable" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="272" __sourcePath="{}/CUSTOMER/terms/externalId" containerType="SINGLE" label="externalId" name="externalId_15" type="string"/>
+<Field __implementationClass="java.lang.String" __index="269" __sourcePath="{}/CUSTOMER/terms/internalId" containerType="SINGLE" label="internalId" name="internalId_14" type="string"/>
+<Field __implementationClass="java.lang.String" __index="270" __sourcePath="{}/CUSTOMER/terms/name" containerType="SINGLE" label="name" name="name_15" type="string"/>
+<Field __index="271" __sourcePath="{}/CUSTOMER/terms/type" containerType="SINGLE" label="type" name="type_14" type="string"/>
+<Field __implementationClass="java.lang.String" __index="191" __sourcePath="{}/CUSTOMER/territory/externalId" containerType="SINGLE" label="externalId" name="externalId_11" type="string"/>
+<Field __implementationClass="java.lang.String" __index="188" __sourcePath="{}/CUSTOMER/territory/internalId" containerType="SINGLE" label="internalId" name="internalId_11" type="string"/>
+<Field __implementationClass="java.lang.String" __index="189" __sourcePath="{}/CUSTOMER/territory/name" containerType="SINGLE" label="name" name="name_12" type="string"/>
+<Field __index="190" __sourcePath="{}/CUSTOMER/territory/type" containerType="SINGLE" label="type" name="type_11" type="string"/>
+<Field __implementationClass="java.lang.String" __index="242" __sourcePath="{}/CUSTOMER/thirdPartyAcct" containerType="SINGLE" label="thirdPartyAcct" name="thirdPartyAcct" type="string"/>
+<Field __index="244" __sourcePath="{}/CUSTOMER/thirdPartyCountry" containerType="SINGLE" label="thirdPartyCountry" name="thirdPartyCountry" type="string"/>
+<Field __implementationClass="java.lang.String" __index="163" __sourcePath="{}/CUSTOMER/thirdPartyZipcode" containerType="SINGLE" label="thirdPartyZipcode" name="thirdPartyZipcode" type="string"/>
+<Field __implementationClass="java.lang.String" __index="221" __sourcePath="{}/CUSTOMER/title" containerType="SINGLE" label="title" name="title" type="string"/>
+<Field __implementationClass="java.lang.Number" __index="340" __sourcePath="{}/CUSTOMER/unbilledOrders" containerType="SINGLE" label="unbilledOrders" name="unbilledOrders" type="number"/>
+<Field __implementationClass="java.lang.String" __index="301" __sourcePath="{}/CUSTOMER/url" containerType="SINGLE" label="url" name="url" type="string"/>
+<Field __implementationClass="java.lang.String" __index="214" __sourcePath="{}/CUSTOMER/vatRegNumber" containerType="SINGLE" label="vatRegNumber" name="vatRegNumber" type="string"/>
+<Field __implementationClass="java.lang.Number" __index="389" __sourcePath="{}/CUSTOMER/visits" containerType="SINGLE" label="visits" name="visits" type="number"/>
+<Field __implementationClass="java.lang.String" __index="26" __sourcePath="{}/CUSTOMER/webLead" containerType="SINGLE" label="webLead" name="webLead" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="31" __referenceCounter="0" __sourcePath="{}/CUSTOMER/customFieldList/customField" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="a9ec1427-5624-494a-8e49-d7c8175f3ee3" _parent_id="__parent_id" _type="Output" id="718e4558-9a7d-47ec-9dc8-6d222c511d56">
+<Record fieldDelimiter="," name="customField" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="51" __sourcePath="{}/CUSTOMER/customFieldList/customField/BooleanCustomFieldRef_x005f_x005f183_x005f_x005fcustentity_x005ffmt_x005fcust_x005fcredit_x005fon_x005fhold" containerType="SINGLE" label="BooleanCustomFieldRef__183__custentity_fmt_cust_credit_on_hold" name="BooleanCustomFieldRef__183__custentity_fmt_cust_credit_on_hold" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="78" __sourcePath="{}/CUSTOMER/customFieldList/customField/BooleanCustomFieldRef_x005f_x005f201_x005f_x005fcustentity_x005ffmt_x005fcustomer_x005fcredit_x005fon_x005fhold" containerType="SINGLE" label="BooleanCustomFieldRef__201__custentity_fmt_customer_credit_on_hold" name="BooleanCustomFieldRef__201__custentity_fmt_customer_credit_on_hold" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="57" __sourcePath="{}/CUSTOMER/customFieldList/customField/BooleanCustomFieldRef_x005f_x005f24_x005f_x005fcustentity18" containerType="SINGLE" label="BooleanCustomFieldRef__24__custentity18" name="BooleanCustomFieldRef__24__custentity18" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="83" __sourcePath="{}/CUSTOMER/customFieldList/customField/BooleanCustomFieldRef_x005f_x005f3993_x005f_x005fcustentity_x005f2663_x005fdirect_x005fdebit" containerType="SINGLE" label="BooleanCustomFieldRef__3993__custentity_2663_direct_debit" name="BooleanCustomFieldRef__3993__custentity_2663_direct_debit" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="56" __sourcePath="{}/CUSTOMER/customFieldList/customField/BooleanCustomFieldRef_x005f_x005f3994_x005f_x005fcustentity_x005f2663_x005fcustomer_x005frefund" containerType="SINGLE" label="BooleanCustomFieldRef__3994__custentity_2663_customer_refund" name="BooleanCustomFieldRef__3994__custentity_2663_customer_refund" type="boolean"/>
+<Field __dmType="Calendar" __implementationClass="java.util.Calendar" __index="63" __sourcePath="{}/CUSTOMER/customFieldList/customField/DateCustomFieldRef_x005f_x005f34_x005f_x005fcustentity9" containerType="SINGLE" label="DateCustomFieldRef__34__custentity9" name="DateCustomFieldRef__34__custentity9" type="string"/>
+<Field __implementationClass="java.math.BigDecimal" __index="89" __sourcePath="{}/CUSTOMER/customFieldList/customField/DoubleCustomFieldRef_x005f_x005f17_x005f_x005fcustentity10" containerType="SINGLE" label="DoubleCustomFieldRef__17__custentity10" name="DoubleCustomFieldRef__17__custentity10" type="decimal"/>
+<Field __implementationClass="java.math.BigDecimal" __index="72" __sourcePath="{}/CUSTOMER/customFieldList/customField/DoubleCustomFieldRef_x005f_x005f37_x005f_x005fcustentity_x005fppob" containerType="SINGLE" label="DoubleCustomFieldRef__37__custentity_ppob" name="DoubleCustomFieldRef__37__custentity_ppob" type="decimal"/>
+<Field __implementationClass="java.lang.Integer" __index="58" __sourcePath="{}/CUSTOMER/customFieldList/customField/LongCustomFieldRef_x005f_x005f27_x005f_x005fcustentity20" containerType="SINGLE" label="LongCustomFieldRef__27__custentity20" name="LongCustomFieldRef__27__custentity20" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="43" __sourcePath="{}/CUSTOMER/customFieldList/customField/LongCustomFieldRef_x005f_x005f4565_x005f_x005fcustentity_x005fcust_x005fpriority" containerType="SINGLE" label="LongCustomFieldRef__4565__custentity_cust_priority" name="LongCustomFieldRef__4565__custentity_cust_priority" type="integer"/>
+<Field __implementationClass="java.lang.String" __index="98" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f184_x005f_x005fcustentity_x005ffmt_x005fcur_x005fsales_x005forder/externalId" containerType="SINGLE" label="externalId" name="externalId_11" type="string"/>
+<Field __implementationClass="java.lang.String" __index="95" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f184_x005f_x005fcustentity_x005ffmt_x005fcur_x005fsales_x005forder/internalId" containerType="SINGLE" label="internalId" name="internalId_11" type="string"/>
+<Field __implementationClass="java.lang.String" __index="96" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f184_x005f_x005fcustentity_x005ffmt_x005fcur_x005fsales_x005forder/name" containerType="SINGLE" label="name" name="name_11" type="string"/>
+<Field __implementationClass="java.lang.String" __index="97" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f184_x005f_x005fcustentity_x005ffmt_x005fcur_x005fsales_x005forder/typeId" containerType="SINGLE" label="typeId" name="typeId_11" type="string"/>
+<Field __implementationClass="java.lang.String" __index="67" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f185_x005f_x005fcustentity_x005flead_x005fcategory/externalId" containerType="SINGLE" label="externalId" name="externalId_5" type="string"/>
+<Field __implementationClass="java.lang.String" __index="64" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f185_x005f_x005fcustentity_x005flead_x005fcategory/internalId" containerType="SINGLE" label="internalId" name="internalId_5" type="string"/>
+<Field __implementationClass="java.lang.String" __index="65" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f185_x005f_x005fcustentity_x005flead_x005fcategory/name" containerType="SINGLE" label="name" name="name_5" type="string"/>
+<Field __implementationClass="java.lang.String" __index="66" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f185_x005f_x005fcustentity_x005flead_x005fcategory/typeId" containerType="SINGLE" label="typeId" name="typeId_5" type="string"/>
+<Field __implementationClass="java.lang.String" __index="38" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f20_x005f_x005fcustentity13/externalId" containerType="SINGLE" label="externalId" name="externalId_1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="35" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f20_x005f_x005fcustentity13/internalId" containerType="SINGLE" label="internalId" name="internalId_1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="36" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f20_x005f_x005fcustentity13/name" containerType="SINGLE" label="name" name="name_1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="37" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f20_x005f_x005fcustentity13/typeId" containerType="SINGLE" label="typeId" name="typeId_1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="87" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f21_x005f_x005fcustentity14/externalId" containerType="SINGLE" label="externalId" name="externalId_9" type="string"/>
+<Field __implementationClass="java.lang.String" __index="84" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f21_x005f_x005fcustentity14/internalId" containerType="SINGLE" label="internalId" name="internalId_9" type="string"/>
+<Field __implementationClass="java.lang.String" __index="85" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f21_x005f_x005fcustentity14/name" containerType="SINGLE" label="name" name="name_9" type="string"/>
+<Field __implementationClass="java.lang.String" __index="86" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f21_x005f_x005fcustentity14/typeId" containerType="SINGLE" label="typeId" name="typeId_9" type="string"/>
+<Field __implementationClass="java.lang.String" __index="62" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f22_x005f_x005fcustentity15/externalId" containerType="SINGLE" label="externalId" name="externalId_4" type="string"/>
+<Field __implementationClass="java.lang.String" __index="59" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f22_x005f_x005fcustentity15/internalId" containerType="SINGLE" label="internalId" name="internalId_4" type="string"/>
+<Field __implementationClass="java.lang.String" __index="60" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f22_x005f_x005fcustentity15/name" containerType="SINGLE" label="name" name="name_4" type="string"/>
+<Field __implementationClass="java.lang.String" __index="61" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f22_x005f_x005fcustentity15/typeId" containerType="SINGLE" label="typeId" name="typeId_4" type="string"/>
+<Field __implementationClass="java.lang.String" __index="71" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f23_x005f_x005fcustentity16/externalId" containerType="SINGLE" label="externalId" name="externalId_6" type="string"/>
+<Field __implementationClass="java.lang.String" __index="68" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f23_x005f_x005fcustentity16/internalId" containerType="SINGLE" label="internalId" name="internalId_6" type="string"/>
+<Field __implementationClass="java.lang.String" __index="69" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f23_x005f_x005fcustentity16/name" containerType="SINGLE" label="name" name="name_6" type="string"/>
+<Field __implementationClass="java.lang.String" __index="70" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f23_x005f_x005fcustentity16/typeId" containerType="SINGLE" label="typeId" name="typeId_6" type="string"/>
+<Field __implementationClass="java.lang.String" __index="82" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f28_x005f_x005fcustentity21/externalId" containerType="SINGLE" label="externalId" name="externalId_8" type="string"/>
+<Field __implementationClass="java.lang.String" __index="79" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f28_x005f_x005fcustentity21/internalId" containerType="SINGLE" label="internalId" name="internalId_8" type="string"/>
+<Field __implementationClass="java.lang.String" __index="80" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f28_x005f_x005fcustentity21/name" containerType="SINGLE" label="name" name="name_8" type="string"/>
+<Field __implementationClass="java.lang.String" __index="81" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f28_x005f_x005fcustentity21/typeId" containerType="SINGLE" label="typeId" name="typeId_8" type="string"/>
+<Field __implementationClass="java.lang.String" __index="34" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f30_x005f_x005fcustentity5/externalId" containerType="SINGLE" label="externalId" name="externalId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="31" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f30_x005f_x005fcustentity5/internalId" containerType="SINGLE" label="internalId" name="internalId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="32" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f30_x005f_x005fcustentity5/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __implementationClass="java.lang.String" __index="33" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f30_x005f_x005fcustentity5/typeId" containerType="SINGLE" label="typeId" name="typeId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="42" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f31_x005f_x005fcustentity6/externalId" containerType="SINGLE" label="externalId" name="externalId_2" type="string"/>
+<Field __implementationClass="java.lang.String" __index="39" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f31_x005f_x005fcustentity6/internalId" containerType="SINGLE" label="internalId" name="internalId_2" type="string"/>
+<Field __implementationClass="java.lang.String" __index="40" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f31_x005f_x005fcustentity6/name" containerType="SINGLE" label="name" name="name_2" type="string"/>
+<Field __implementationClass="java.lang.String" __index="41" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f31_x005f_x005fcustentity6/typeId" containerType="SINGLE" label="typeId" name="typeId_2" type="string"/>
+<Field __implementationClass="java.lang.String" __index="55" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f32_x005f_x005fcustentity7/externalId" containerType="SINGLE" label="externalId" name="externalId_3" type="string"/>
+<Field __implementationClass="java.lang.String" __index="52" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f32_x005f_x005fcustentity7/internalId" containerType="SINGLE" label="internalId" name="internalId_3" type="string"/>
+<Field __implementationClass="java.lang.String" __index="53" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f32_x005f_x005fcustentity7/name" containerType="SINGLE" label="name" name="name_3" type="string"/>
+<Field __implementationClass="java.lang.String" __index="54" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f32_x005f_x005fcustentity7/typeId" containerType="SINGLE" label="typeId" name="typeId_3" type="string"/>
+<Field __implementationClass="java.lang.String" __index="76" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f33_x005f_x005fcustentity8/externalId" containerType="SINGLE" label="externalId" name="externalId_7" type="string"/>
+<Field __implementationClass="java.lang.String" __index="73" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f33_x005f_x005fcustentity8/internalId" containerType="SINGLE" label="internalId" name="internalId_7" type="string"/>
+<Field __implementationClass="java.lang.String" __index="74" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f33_x005f_x005fcustentity8/name" containerType="SINGLE" label="name" name="name_7" type="string"/>
+<Field __implementationClass="java.lang.String" __index="75" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f33_x005f_x005fcustentity8/typeId" containerType="SINGLE" label="typeId" name="typeId_7" type="string"/>
+<Field __implementationClass="java.lang.String" __index="94" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f3744_x005f_x005fcustentity_x005fsupervisor/externalId" containerType="SINGLE" label="externalId" name="externalId_10" type="string"/>
+<Field __implementationClass="java.lang.String" __index="91" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f3744_x005f_x005fcustentity_x005fsupervisor/internalId" containerType="SINGLE" label="internalId" name="internalId_10" type="string"/>
+<Field __implementationClass="java.lang.String" __index="92" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f3744_x005f_x005fcustentity_x005fsupervisor/name" containerType="SINGLE" label="name" name="name_10" type="string"/>
+<Field __implementationClass="java.lang.String" __index="93" __sourcePath="{}/CUSTOMER/customFieldList/customField/SelectCustomFieldRef_x005f_x005f3744_x005f_x005fcustentity_x005fsupervisor/typeId" containerType="SINGLE" label="typeId" name="typeId_10" type="string"/>
+<Field __implementationClass="java.lang.String" __index="45" __sourcePath="{}/CUSTOMER/customFieldList/customField/StringCustomFieldRef_x005f_x005f18_x005f_x005fcustentity11" containerType="SINGLE" label="StringCustomFieldRef__18__custentity11" name="StringCustomFieldRef__18__custentity11" type="string"/>
+<Field __implementationClass="java.lang.String" __index="88" __sourcePath="{}/CUSTOMER/customFieldList/customField/StringCustomFieldRef_x005f_x005f19_x005f_x005fcustentity12" containerType="SINGLE" label="StringCustomFieldRef__19__custentity12" name="StringCustomFieldRef__19__custentity12" type="string"/>
+<Field __implementationClass="java.lang.String" __index="90" __sourcePath="{}/CUSTOMER/customFieldList/customField/StringCustomFieldRef_x005f_x005f25_x005f_x005fcustentity19" containerType="SINGLE" label="StringCustomFieldRef__25__custentity19" name="StringCustomFieldRef__25__custentity19" type="string"/>
+<Field __implementationClass="java.lang.String" __index="46" __sourcePath="{}/CUSTOMER/customFieldList/customField/StringCustomFieldRef_x005f_x005f29_x005f_x005fcustentity4" containerType="SINGLE" label="StringCustomFieldRef__29__custentity4" name="StringCustomFieldRef__29__custentity4" type="string"/>
+<Field __implementationClass="java.lang.String" __index="99" __sourcePath="{}/CUSTOMER/customFieldList/customField/StringCustomFieldRef_x005f_x005f4600_x005f_x005fcustentity_x005fyou_x005fhear_x005fhippocket" containerType="SINGLE" label="StringCustomFieldRef__4600__custentity_you_hear_hippocket" name="StringCustomFieldRef__4600__custentity_you_hear_hippocket" type="string"/>
+<Field __implementationClass="java.lang.String" __index="44" __sourcePath="{}/CUSTOMER/customFieldList/customField/StringCustomFieldRef_x005f_x005f4601_x005f_x005fcustentity_x005fowned_x005fbus_x005fbefore" containerType="SINGLE" label="StringCustomFieldRef__4601__custentity_owned_bus_before" name="StringCustomFieldRef__4601__custentity_owned_bus_before" type="string"/>
+<Field __implementationClass="java.lang.String" __index="77" __sourcePath="{}/CUSTOMER/customFieldList/customField/StringCustomFieldRef_x005f_x005f4602_x005f_x005fcustentity_x005fwrkwear_x005fsafety_x005finterest" containerType="SINGLE" label="StringCustomFieldRef__4602__custentity_wrkwear_safety_interest" name="StringCustomFieldRef__4602__custentity_wrkwear_safety_interest" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="204" __referenceCounter="0" __sourcePath="{}/CUSTOMER/downloadList/download" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="a9ec1427-5624-494a-8e49-d7c8175f3ee3" _parent_id="__parent_id" _type="Output" id="677bd9d9-9e72-438e-9894-5037b33c355b">
+<Record fieldDelimiter="," name="download" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __dmType="Calendar" __implementationClass="javax.xml.datatype.XMLGregorianCalendar" __index="206" __sourcePath="{}/CUSTOMER/downloadList/download/expiration" containerType="SINGLE" label="expiration" name="expiration" type="string"/>
+<Field __implementationClass="java.lang.String" __index="210" __sourcePath="{}/CUSTOMER/downloadList/download/file/externalId" containerType="SINGLE" label="externalId" name="externalId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="207" __sourcePath="{}/CUSTOMER/downloadList/download/file/internalId" containerType="SINGLE" label="internalId" name="internalId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="208" __sourcePath="{}/CUSTOMER/downloadList/download/file/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __index="209" __sourcePath="{}/CUSTOMER/downloadList/download/file/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __implementationClass="java.lang.String" __index="205" __sourcePath="{}/CUSTOMER/downloadList/download/licenseCode" containerType="SINGLE" label="licenseCode" name="licenseCode" type="string"/>
+<Field __implementationClass="java.lang.Number" __index="204" __sourcePath="{}/CUSTOMER/downloadList/download/remainingDownloads" containerType="SINGLE" label="remainingDownloads" name="remainingDownloads" type="number"/>
+</Record>
+</Metadata>
+<Metadata __index="106" __referenceCounter="0" __sourcePath="{}/CUSTOMER/groupPricingList/groupPricing" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="a9ec1427-5624-494a-8e49-d7c8175f3ee3" _parent_id="__parent_id" _type="Output" id="aa1eea5e-900e-49b1-b892-901683c80302">
+<Record fieldDelimiter="," name="groupPricing" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __implementationClass="java.lang.String" __index="113" __sourcePath="{}/CUSTOMER/groupPricingList/groupPricing/group/externalId" containerType="SINGLE" label="externalId" name="externalId_1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="110" __sourcePath="{}/CUSTOMER/groupPricingList/groupPricing/group/internalId" containerType="SINGLE" label="internalId" name="internalId_1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="111" __sourcePath="{}/CUSTOMER/groupPricingList/groupPricing/group/name" containerType="SINGLE" label="name" name="name_1" type="string"/>
+<Field __index="112" __sourcePath="{}/CUSTOMER/groupPricingList/groupPricing/group/type" containerType="SINGLE" label="type" name="type_1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="109" __sourcePath="{}/CUSTOMER/groupPricingList/groupPricing/level/externalId" containerType="SINGLE" label="externalId" name="externalId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="106" __sourcePath="{}/CUSTOMER/groupPricingList/groupPricing/level/internalId" containerType="SINGLE" label="internalId" name="internalId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="107" __sourcePath="{}/CUSTOMER/groupPricingList/groupPricing/level/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __index="108" __sourcePath="{}/CUSTOMER/groupPricingList/groupPricing/level/type" containerType="SINGLE" label="type" name="type" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="164" __referenceCounter="0" __sourcePath="{}/CUSTOMER/itemPricingList/itemPricing" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="a9ec1427-5624-494a-8e49-d7c8175f3ee3" _parent_id="__parent_id" _type="Output" id="b047bbd8-1f0d-42ed-8aef-c421435ea354">
+<Record fieldDelimiter="," name="itemPricing" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __implementationClass="java.lang.String" __index="176" __sourcePath="{}/CUSTOMER/itemPricingList/itemPricing/currency/externalId" containerType="SINGLE" label="externalId" name="externalId_2" type="string"/>
+<Field __implementationClass="java.lang.String" __index="173" __sourcePath="{}/CUSTOMER/itemPricingList/itemPricing/currency/internalId" containerType="SINGLE" label="internalId" name="internalId_2" type="string"/>
+<Field __implementationClass="java.lang.String" __index="174" __sourcePath="{}/CUSTOMER/itemPricingList/itemPricing/currency/name" containerType="SINGLE" label="name" name="name_2" type="string"/>
+<Field __index="175" __sourcePath="{}/CUSTOMER/itemPricingList/itemPricing/currency/type" containerType="SINGLE" label="type" name="type_2" type="string"/>
+<Field __implementationClass="java.lang.String" __index="172" __sourcePath="{}/CUSTOMER/itemPricingList/itemPricing/item/externalId" containerType="SINGLE" label="externalId" name="externalId_1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="169" __sourcePath="{}/CUSTOMER/itemPricingList/itemPricing/item/internalId" containerType="SINGLE" label="internalId" name="internalId_1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="170" __sourcePath="{}/CUSTOMER/itemPricingList/itemPricing/item/name" containerType="SINGLE" label="name" name="name_1" type="string"/>
+<Field __index="171" __sourcePath="{}/CUSTOMER/itemPricingList/itemPricing/item/type" containerType="SINGLE" label="type" name="type_1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="168" __sourcePath="{}/CUSTOMER/itemPricingList/itemPricing/level/externalId" containerType="SINGLE" label="externalId" name="externalId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="165" __sourcePath="{}/CUSTOMER/itemPricingList/itemPricing/level/internalId" containerType="SINGLE" label="internalId" name="internalId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="166" __sourcePath="{}/CUSTOMER/itemPricingList/itemPricing/level/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __index="167" __sourcePath="{}/CUSTOMER/itemPricingList/itemPricing/level/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __implementationClass="java.lang.Number" __index="164" __sourcePath="{}/CUSTOMER/itemPricingList/itemPricing/price" containerType="SINGLE" label="price" name="price" type="number"/>
+</Record>
+</Metadata>
+<Metadata __index="47" __referenceCounter="0" __sourcePath="{}/CUSTOMER/customFieldList/customField/MultiSelectCustomFieldRef_x005f_x005f16_x005f_x005fcustentity1" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="718e4558-9a7d-47ec-9dc8-6d222c511d56" _parent_id="__parent_id" _type="Output" id="9ac0f5eb-2cbb-4c18-b211-28b3517c627f">
+<Record fieldDelimiter="," name="MultiSelectCustomFieldRef__16__custentity1" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __implementationClass="java.lang.String" __index="50" __sourcePath="{}/CUSTOMER/customFieldList/customField/MultiSelectCustomFieldRef_x005f_x005f16_x005f_x005fcustentity1/externalId" containerType="SINGLE" label="externalId" name="externalId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="47" __sourcePath="{}/CUSTOMER/customFieldList/customField/MultiSelectCustomFieldRef_x005f_x005f16_x005f_x005fcustentity1/internalId" containerType="SINGLE" label="internalId" name="internalId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="48" __sourcePath="{}/CUSTOMER/customFieldList/customField/MultiSelectCustomFieldRef_x005f_x005f16_x005f_x005fcustentity1/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __implementationClass="java.lang.String" __index="49" __sourcePath="{}/CUSTOMER/customFieldList/customField/MultiSelectCustomFieldRef_x005f_x005f16_x005f_x005fcustentity1/typeId" containerType="SINGLE" label="typeId" name="typeId" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="0" __referenceCounter="1" __sourcePath="{}/object" _dataStructure="OBJECT" _id="__id" _type="Input" id="82d6c223-1f9b-4166-8c2b-bf56025064f7">
+<Record fieldDelimiter="," name="object" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="0" __sourcePath="{}/object/attribute_x005fset_x005fid" containerType="SINGLE" label="attribute_set_id" name="attribute_set_id" type="string"/>
+<Field __index="1" __sourcePath="{}/object/confirmation" containerType="SINGLE" label="confirmation" name="confirmation" type="string"/>
+<Field __index="2" __sourcePath="{}/object/created_x005fat" containerType="SINGLE" label="created_at" name="created_at" type="string"/>
+<Field __index="3" __sourcePath="{}/object/created_x005fin" containerType="SINGLE" label="created_in" name="created_in" type="string"/>
+<Field __index="4" __sourcePath="{}/object/customer_x005factivated" containerType="SINGLE" label="customer_activated" name="customer_activated" type="string"/>
+<Field __index="5" __sourcePath="{}/object/default_x005fbilling" containerType="SINGLE" label="default_billing" name="default_billing" type="string"/>
+<Field __index="6" __sourcePath="{}/object/default_x005fshipping" containerType="SINGLE" label="default_shipping" name="default_shipping" type="string"/>
+<Field __index="7" __sourcePath="{}/object/disable_x005fauto_x005fgroup_x005fchange" containerType="SINGLE" label="disable_auto_group_change" name="disable_auto_group_change" type="string"/>
+<Field __index="8" __sourcePath="{}/object/dob" containerType="SINGLE" label="dob" name="dob" type="string"/>
+<Field __index="9" __sourcePath="{}/object/dob_x005fis_x005fformated" containerType="SINGLE" label="dob_is_formated" name="dob_is_formated" type="boolean"/>
+<Field __index="10" __sourcePath="{}/object/email" containerType="SINGLE" label="email" name="email" type="string"/>
+<Field __index="11" __sourcePath="{}/object/entity_x005fid" containerType="SINGLE" label="entity_id" name="entity_id" type="string"/>
+<Field __index="12" __sourcePath="{}/object/entity_x005ftype_x005fid" containerType="SINGLE" label="entity_type_id" name="entity_type_id" type="string"/>
+<Field __index="13" __sourcePath="{}/object/firstname" containerType="SINGLE" label="firstname" name="firstname" type="string"/>
+<Field __index="14" __sourcePath="{}/object/gender" containerType="SINGLE" label="gender" name="gender" type="string"/>
+<Field __index="15" __sourcePath="{}/object/group_x005fid" containerType="SINGLE" label="group_id" name="group_id" type="string"/>
+<Field __index="16" __sourcePath="{}/object/increment_x005fid" containerType="SINGLE" label="increment_id" name="increment_id" type="string"/>
+<Field __index="17" __sourcePath="{}/object/is_x005factive" containerType="SINGLE" label="is_active" name="is_active" type="string"/>
+<Field __index="18" __sourcePath="{}/object/is_x005fsubscribed" containerType="SINGLE" label="is_subscribed" name="is_subscribed" type="boolean"/>
+<Field __index="19" __sourcePath="{}/object/lastname" containerType="SINGLE" label="lastname" name="lastname" type="string"/>
+<Field __index="20" __sourcePath="{}/object/middlename" containerType="SINGLE" label="middlename" name="middlename" type="string"/>
+<Field __index="21" __sourcePath="{}/object/parent_x005fid" containerType="SINGLE" label="parent_id" name="parent_id" type="number"/>
+<Field __index="22" __sourcePath="{}/object/prefix" containerType="SINGLE" label="prefix" name="prefix" type="string"/>
+<Field __index="23" __sourcePath="{}/object/price_x005flevel_x005fid" containerType="SINGLE" label="price_level_id" name="price_level_id" type="string"/>
+<Field __index="24" __sourcePath="{}/object/store_x005fid" containerType="SINGLE" label="store_id" name="store_id" type="string"/>
+<Field __index="25" __sourcePath="{}/object/suffix" containerType="SINGLE" label="suffix" name="suffix" type="string"/>
+<Field __index="26" __sourcePath="{}/object/taxvat" containerType="SINGLE" label="taxvat" name="taxvat" type="string"/>
+<Field __index="27" __sourcePath="{}/object/updated_x005fat" containerType="SINGLE" label="updated_at" name="updated_at" type="string"/>
+<Field __index="28" __sourcePath="{}/object/website_x005fid" containerType="SINGLE" label="website_id" name="website_id" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="192" __referenceCounter="0" __sourcePath="{}/CUSTOMER/partnersList/partners" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="a9ec1427-5624-494a-8e49-d7c8175f3ee3" _parent_id="__parent_id" _type="Output" id="ea08ca91-3a54-4050-921d-85d03f551a41">
+<Record fieldDelimiter="," name="partners" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __implementationClass="java.lang.Number" __index="197" __sourcePath="{}/CUSTOMER/partnersList/partners/contribution" containerType="SINGLE" label="contribution" name="contribution" type="number"/>
+<Field __implementationClass="java.lang.Boolean" __index="192" __sourcePath="{}/CUSTOMER/partnersList/partners/isPrimary" containerType="SINGLE" label="isPrimary" name="isPrimary" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="201" __sourcePath="{}/CUSTOMER/partnersList/partners/partner/externalId" containerType="SINGLE" label="externalId" name="externalId_1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="198" __sourcePath="{}/CUSTOMER/partnersList/partners/partner/internalId" containerType="SINGLE" label="internalId" name="internalId_1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="199" __sourcePath="{}/CUSTOMER/partnersList/partners/partner/name" containerType="SINGLE" label="name" name="name_1" type="string"/>
+<Field __index="200" __sourcePath="{}/CUSTOMER/partnersList/partners/partner/type" containerType="SINGLE" label="type" name="type_1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="196" __sourcePath="{}/CUSTOMER/partnersList/partners/partnerRole/externalId" containerType="SINGLE" label="externalId" name="externalId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="193" __sourcePath="{}/CUSTOMER/partnersList/partners/partnerRole/internalId" containerType="SINGLE" label="internalId" name="internalId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="194" __sourcePath="{}/CUSTOMER/partnersList/partners/partnerRole/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __index="195" __sourcePath="{}/CUSTOMER/partnersList/partners/partnerRole/type" containerType="SINGLE" label="type" name="type" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="5" __referenceCounter="0" __sourcePath="{}/CUSTOMER/salesTeamList/salesTeam" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="a9ec1427-5624-494a-8e49-d7c8175f3ee3" _parent_id="__parent_id" _type="Output" id="69950b14-71cd-43c7-9d18-fc7fef1b036c">
+<Record fieldDelimiter="," name="salesTeam" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __implementationClass="java.lang.Number" __index="6" __sourcePath="{}/CUSTOMER/salesTeamList/salesTeam/contribution" containerType="SINGLE" label="contribution" name="contribution" type="number"/>
+<Field __implementationClass="java.lang.String" __index="14" __sourcePath="{}/CUSTOMER/salesTeamList/salesTeam/employee/externalId" containerType="SINGLE" label="externalId" name="externalId_1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="11" __sourcePath="{}/CUSTOMER/salesTeamList/salesTeam/employee/internalId" containerType="SINGLE" label="internalId" name="internalId_1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="12" __sourcePath="{}/CUSTOMER/salesTeamList/salesTeam/employee/name" containerType="SINGLE" label="name" name="name_1" type="string"/>
+<Field __index="13" __sourcePath="{}/CUSTOMER/salesTeamList/salesTeam/employee/type" containerType="SINGLE" label="type" name="type_1" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="5" __sourcePath="{}/CUSTOMER/salesTeamList/salesTeam/isPrimary" containerType="SINGLE" label="isPrimary" name="isPrimary" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="10" __sourcePath="{}/CUSTOMER/salesTeamList/salesTeam/salesRole/externalId" containerType="SINGLE" label="externalId" name="externalId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="7" __sourcePath="{}/CUSTOMER/salesTeamList/salesTeam/salesRole/internalId" containerType="SINGLE" label="internalId" name="internalId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="8" __sourcePath="{}/CUSTOMER/salesTeamList/salesTeam/salesRole/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __index="9" __sourcePath="{}/CUSTOMER/salesTeamList/salesTeam/salesRole/type" containerType="SINGLE" label="type" name="type" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="247" __referenceCounter="0" __sourcePath="{}/CUSTOMER/subscriptionsList/subscriptions" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="a9ec1427-5624-494a-8e49-d7c8175f3ee3" _parent_id="__parent_id" _type="Output" id="14881396-51c6-4728-8ce8-9f891d2fe247">
+<Record fieldDelimiter="," name="subscriptions" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __dmType="Calendar" __implementationClass="javax.xml.datatype.XMLGregorianCalendar" __index="251" __sourcePath="{}/CUSTOMER/subscriptionsList/subscriptions/lastModifiedDate" containerType="SINGLE" label="lastModifiedDate" name="lastModifiedDate" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="252" __sourcePath="{}/CUSTOMER/subscriptionsList/subscriptions/subscribed" containerType="SINGLE" label="subscribed" name="subscribed" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="250" __sourcePath="{}/CUSTOMER/subscriptionsList/subscriptions/subscription/externalId" containerType="SINGLE" label="externalId" name="externalId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="247" __sourcePath="{}/CUSTOMER/subscriptionsList/subscriptions/subscription/internalId" containerType="SINGLE" label="internalId" name="internalId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="248" __sourcePath="{}/CUSTOMER/subscriptionsList/subscriptions/subscription/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __index="249" __sourcePath="{}/CUSTOMER/subscriptionsList/subscriptions/subscription/type" containerType="SINGLE" label="type" name="type" type="string"/>
+</Record>
+</Metadata>
+<Dictionary>
+<Entry id="DictionaryEntry0" input="true" name="inputPayload" output="false" type="object"/>
+<Entry id="DictionaryEntry1" input="false" name="outputPayload" output="true" type="object"/>
+</Dictionary>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" guiName="Foreach 'object' -&gt; 'CUSTOMER'" guiX="460" guiY="20" id="FOREACH_OBJECT_CUSTOMER" transformClass="com.mulesoft.datamapper.transform.MelRecordTransform" type="REFORMAT">
+<attr name="melScript"><![CDATA[//MEL
+//START -> DO NOT REMOVE
+output.__id = input.__id;
+//END -> DO NOT REMOVE
+output.email = input.email;
+output.firstName = input.firstname;
+output.lastName = input.lastname;
+output.middleName = input.middlename;
+output.internalId_23 = '1';
+output.name_24 = 'Honeycomb Mfg.';
+output.isPerson = true;]]></attr>
+</Node>
+<Node charset="UTF-8" enabled="enabled" fileURL="dict:inputPayload" guiName="JSON READER" guiX="20" guiY="20" id="JSON_READER0" type="JSON_READER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context xpath="/root">
+  <Context outPort="0" sequenceField="__id" xpath="object">
+    <Mapping cloverField="attribute_set_id" trim="true" xpath="attribute_x005fset_x005fid"/>
+    <Mapping cloverField="confirmation" trim="true" xpath="confirmation"/>
+    <Mapping cloverField="created_at" trim="true" xpath="created_x005fat"/>
+    <Mapping cloverField="created_in" trim="true" xpath="created_x005fin"/>
+    <Mapping cloverField="customer_activated" trim="true" xpath="customer_x005factivated"/>
+    <Mapping cloverField="default_billing" trim="true" xpath="default_x005fbilling"/>
+    <Mapping cloverField="default_shipping" trim="true" xpath="default_x005fshipping"/>
+    <Mapping cloverField="disable_auto_group_change" trim="true" xpath="disable_x005fauto_x005fgroup_x005fchange"/>
+    <Mapping cloverField="dob" trim="true" xpath="dob"/>
+    <Mapping cloverField="dob_is_formated" trim="true" xpath="dob_x005fis_x005fformated"/>
+    <Mapping cloverField="email" trim="true" xpath="email"/>
+    <Mapping cloverField="entity_id" trim="true" xpath="entity_x005fid"/>
+    <Mapping cloverField="entity_type_id" trim="true" xpath="entity_x005ftype_x005fid"/>
+    <Mapping cloverField="firstname" trim="true" xpath="firstname"/>
+    <Mapping cloverField="gender" trim="true" xpath="gender"/>
+    <Mapping cloverField="group_id" trim="true" xpath="group_x005fid"/>
+    <Mapping cloverField="increment_id" trim="true" xpath="increment_x005fid"/>
+    <Mapping cloverField="is_active" trim="true" xpath="is_x005factive"/>
+    <Mapping cloverField="is_subscribed" trim="true" xpath="is_x005fsubscribed"/>
+    <Mapping cloverField="lastname" trim="true" xpath="lastname"/>
+    <Mapping cloverField="middlename" trim="true" xpath="middlename"/>
+    <Mapping cloverField="parent_id" trim="true" xpath="parent_x005fid"/>
+    <Mapping cloverField="prefix" trim="true" xpath="prefix"/>
+    <Mapping cloverField="price_level_id" trim="true" xpath="price_x005flevel_x005fid"/>
+    <Mapping cloverField="store_id" trim="true" xpath="store_x005fid"/>
+    <Mapping cloverField="suffix" trim="true" xpath="suffix"/>
+    <Mapping cloverField="taxvat" trim="true" xpath="taxvat"/>
+    <Mapping cloverField="updated_at" trim="true" xpath="updated_x005fat"/>
+    <Mapping cloverField="website_id" trim="true" xpath="website_x005fid"/>
+  </Context>
+</Context>
+]]></attr>
+<attr name="__isJsonSchema"><![CDATA[true]]></attr>
+<attr name="_data_format"><![CDATA[JSON]]></attr>
+<attr name="jsonSchemaURL"><![CDATA[./src/main/resources/request.json]]></attr>
+</Node>
+<Node cacheInMemory="true" enabled="enabled" fileURL="dict:outputPayload" guiName="Map&lt;k,v&gt; WRITER" guiX="900" guiY="20" id="MAP_WRITER0" type="MAP_WRITER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<CUSTOMER xmlns:clover="http://www.cloveretl.com/ns/xmlmapping" clover:inPort="0">
+  <emailPreference>$0.emailPreference</emailPreference>
+  <priceLevel>
+    <internalId clover:dataType="java.lang.String">$0.internalId</internalId>
+    <name clover:dataType="java.lang.String">$0.name</name>
+    <type>$0.type</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId</externalId>
+  </priceLevel>
+  <salesTeamList>
+    <replaceAll clover:dataType="java.lang.Boolean">$0.replaceAll</replaceAll>
+  </salesTeamList>
+  <leadSource>
+    <internalId clover:dataType="java.lang.String">$0.internalId_1</internalId>
+    <name clover:dataType="java.lang.String">$0.name_1</name>
+    <type>$0.type_1</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_1</externalId>
+  </leadSource>
+  <monthlyClosing>$0.monthlyClosing</monthlyClosing>
+  <overdueBalance clover:dataType="java.lang.Number">$0.overdueBalance</overdueBalance>
+  <firstVisit clover:dataType="javax.xml.datatype.XMLGregorianCalendar">$0.firstVisit</firstVisit>
+  <endDate clover:dataType="javax.xml.datatype.XMLGregorianCalendar">$0.endDate</endDate>
+  <emailTransactions clover:dataType="java.lang.Boolean">$0.emailTransactions</emailTransactions>
+  <giveAccess clover:dataType="java.lang.Boolean">$0.giveAccess</giveAccess>
+  <webLead clover:dataType="java.lang.String">$0.webLead</webLead>
+  <salesReadiness>
+    <internalId clover:dataType="java.lang.String">$0.internalId_2</internalId>
+    <name clover:dataType="java.lang.String">$0.name_2</name>
+    <type>$0.type_2</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_2</externalId>
+  </salesReadiness>
+  <isInactive clover:dataType="java.lang.Boolean">$0.isInactive</isInactive>
+  <taxItem>
+    <internalId clover:dataType="java.lang.String">$0.internalId_3</internalId>
+    <name clover:dataType="java.lang.String">$0.name_3</name>
+    <type>$0.type_3</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_3</externalId>
+  </taxItem>
+  <consolDepositBalance clover:dataType="java.lang.Number">$0.consolDepositBalance</consolDepositBalance>
+  <groupPricingList>
+    <replaceAll clover:dataType="java.lang.Boolean">$0.replaceAll_1</replaceAll>
+  </groupPricingList>
+  <partner>
+    <internalId clover:dataType="java.lang.String">$0.internalId_4</internalId>
+    <name clover:dataType="java.lang.String">$0.name_4</name>
+    <type>$0.type_4</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_4</externalId>
+  </partner>
+  <taxExempt clover:dataType="java.lang.Boolean">$0.taxExempt</taxExempt>
+  <currencyList>
+    <replaceAll clover:dataType="java.lang.Boolean">$0.replaceAll_2</replaceAll>
+  </currencyList>
+  <middleName clover:dataType="java.lang.String">$0.middleName</middleName>
+  <nullFieldList>
+    <clover:collection clover:name="name">$0.name_5</clover:collection>
+  </nullFieldList>
+  <resaleNumber clover:dataType="java.lang.String">$0.resaleNumber</resaleNumber>
+  <taxable clover:dataType="java.lang.Boolean">$0.taxable</taxable>
+  <shipComplete clover:dataType="java.lang.Boolean">$0.shipComplete</shipComplete>
+  <campaignCategory>
+    <internalId clover:dataType="java.lang.String">$0.internalId_5</internalId>
+    <name clover:dataType="java.lang.String">$0.name_6</name>
+    <type>$0.type_5</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_5</externalId>
+  </campaignCategory>
+  <depositBalance clover:dataType="java.lang.Number">$0.depositBalance</depositBalance>
+  <altPhone clover:dataType="java.lang.String">$0.altPhone</altPhone>
+  <image>
+    <internalId clover:dataType="java.lang.String">$0.internalId_6</internalId>
+    <name clover:dataType="java.lang.String">$0.name_7</name>
+    <type>$0.type_6</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_6</externalId>
+  </image>
+  <parent>
+    <internalId clover:dataType="java.lang.String">$0.internalId_7</internalId>
+    <name clover:dataType="java.lang.String">$0.name_8</name>
+    <type>$0.type_7</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_7</externalId>
+  </parent>
+  <globalSubscriptionStatus>$0.globalSubscriptionStatus</globalSubscriptionStatus>
+  <companyName clover:dataType="java.lang.String">$0.companyName</companyName>
+  <category>
+    <internalId clover:dataType="java.lang.String">$0.internalId_8</internalId>
+    <name clover:dataType="java.lang.String">$0.name_9</name>
+    <type>$0.type_8</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_8</externalId>
+  </category>
+  <referrer clover:dataType="java.lang.String">$0.referrer</referrer>
+  <openingBalance clover:dataType="java.lang.Number">$0.openingBalance</openingBalance>
+  <thirdPartyZipcode clover:dataType="java.lang.String">$0.thirdPartyZipcode</thirdPartyZipcode>
+  <itemPricingList>
+    <replaceAll clover:dataType="java.lang.Boolean">$0.replaceAll_3</replaceAll>
+  </itemPricingList>
+  <language>$0.language</language>
+  <openingBalanceAccount>
+    <internalId clover:dataType="java.lang.String">$0.internalId_9</internalId>
+    <name clover:dataType="java.lang.String">$0.name_10</name>
+    <type>$0.type_9</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_9</externalId>
+  </openingBalanceAccount>
+  <startDate clover:dataType="javax.xml.datatype.XMLGregorianCalendar">$0.startDate</startDate>
+  <prefCCProcessor>
+    <internalId clover:dataType="java.lang.String">$0.internalId_10</internalId>
+    <name clover:dataType="java.lang.String">$0.name_11</name>
+    <type>$0.type_10</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_10</externalId>
+  </prefCCProcessor>
+  <territory>
+    <internalId clover:dataType="java.lang.String">$0.internalId_11</internalId>
+    <name clover:dataType="java.lang.String">$0.name_12</name>
+    <type>$0.type_11</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_11</externalId>
+  </territory>
+  <partnersList>
+    <replaceAll clover:dataType="java.lang.Boolean">$0.replaceAll_4</replaceAll>
+  </partnersList>
+  <entityId clover:dataType="java.lang.String">$0.entityId</entityId>
+  <downloadList>
+    <replaceAll clover:dataType="java.lang.Boolean">$0.replaceAll_5</replaceAll>
+  </downloadList>
+  <negativeNumberFormat>$0.negativeNumberFormat</negativeNumberFormat>
+  <externalId clover:dataType="java.lang.String">$0.externalId_12</externalId>
+  <vatRegNumber clover:dataType="java.lang.String">$0.vatRegNumber</vatRegNumber>
+  <currency>
+    <internalId clover:dataType="java.lang.String">$0.internalId_12</internalId>
+    <name clover:dataType="java.lang.String">$0.name_13</name>
+    <type>$0.type_12</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_13</externalId>
+  </currency>
+  <isPerson clover:dataType="java.lang.Boolean">$0.isPerson</isPerson>
+  <symbolPlacement>$0.symbolPlacement</symbolPlacement>
+  <title clover:dataType="java.lang.String">$0.title</title>
+  <lastPageVisited clover:dataType="java.lang.String">$0.lastPageVisited</lastPageVisited>
+  <estimatedBudget clover:dataType="java.lang.Number">$0.estimatedBudget</estimatedBudget>
+  <addressbookList>
+    <replaceAll clover:dataType="java.lang.Boolean">$0.replaceAll_6</replaceAll>
+  </addressbookList>
+  <thirdPartyAcct clover:dataType="java.lang.String">$0.thirdPartyAcct</thirdPartyAcct>
+  <aging clover:dataType="java.lang.Number">$0.aging</aging>
+  <thirdPartyCountry>$0.thirdPartyCountry</thirdPartyCountry>
+  <reminderDays clover:dataType="java.lang.Number">$0.reminderDays</reminderDays>
+  <overrideCurrencyFormat clover:dataType="java.lang.Boolean">$0.overrideCurrencyFormat</overrideCurrencyFormat>
+  <subscriptionsList>
+    <replaceAll clover:dataType="java.lang.Boolean">$0.replaceAll_7</replaceAll>
+  </subscriptionsList>
+  <lastVisit clover:dataType="javax.xml.datatype.XMLGregorianCalendar">$0.lastVisit</lastVisit>
+  <password2 clover:dataType="java.lang.String">$0.password2</password2>
+  <altName clover:dataType="java.lang.String">$0.altName</altName>
+  <contribPct clover:dataType="java.lang.String">$0.contribPct</contribPct>
+  <salutation clover:dataType="java.lang.String">$0.salutation</salutation>
+  <accessRole>
+    <internalId clover:dataType="java.lang.String">$0.internalId_13</internalId>
+    <name clover:dataType="java.lang.String">$0.name_14</name>
+    <type>$0.type_13</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_14</externalId>
+  </accessRole>
+  <comments clover:dataType="java.lang.String">$0.comments</comments>
+  <creditHoldOverride>$0.creditHoldOverride</creditHoldOverride>
+  <phone clover:dataType="java.lang.String">$0.phone</phone>
+  <billPay clover:dataType="java.lang.Boolean">$0.billPay</billPay>
+  <consolUnbilledOrders clover:dataType="java.lang.Number">$0.consolUnbilledOrders</consolUnbilledOrders>
+  <isBudgetApproved clover:dataType="java.lang.Boolean">$0.isBudgetApproved</isBudgetApproved>
+  <terms>
+    <internalId clover:dataType="java.lang.String">$0.internalId_14</internalId>
+    <name clover:dataType="java.lang.String">$0.name_15</name>
+    <type>$0.type_14</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_15</externalId>
+  </terms>
+  <creditLimit clover:dataType="java.lang.Number">$0.creditLimit</creditLimit>
+  <altEmail clover:dataType="java.lang.String">$0.altEmail</altEmail>
+  <homePhone clover:dataType="java.lang.String">$0.homePhone</homePhone>
+  <password clover:dataType="java.lang.String">$0.password</password>
+  <printOnCheckAs clover:dataType="java.lang.String">$0.printOnCheckAs</printOnCheckAs>
+  <balance clover:dataType="java.lang.Number">$0.balance</balance>
+  <accountNumber clover:dataType="java.lang.String">$0.accountNumber</accountNumber>
+  <receivablesAccount>
+    <internalId clover:dataType="java.lang.String">$0.internalId_15</internalId>
+    <name clover:dataType="java.lang.String">$0.name_16</name>
+    <type>$0.type_15</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_16</externalId>
+  </receivablesAccount>
+  <requirePwdChange clover:dataType="java.lang.Boolean">$0.requirePwdChange</requirePwdChange>
+  <representingSubsidiary>
+    <internalId clover:dataType="java.lang.String">$0.internalId_16</internalId>
+    <name clover:dataType="java.lang.String">$0.name_17</name>
+    <type>$0.type_16</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_17</externalId>
+  </representingSubsidiary>
+  <lastName clover:dataType="java.lang.String">$0.lastName</lastName>
+  <fax clover:dataType="java.lang.String">$0.fax</fax>
+  <keywords clover:dataType="java.lang.String">$0.keywords</keywords>
+  <consolDaysOverdue clover:dataType="java.lang.Number">$0.consolDaysOverdue</consolDaysOverdue>
+  <buyingTimeFrame>
+    <internalId clover:dataType="java.lang.String">$0.internalId_17</internalId>
+    <name clover:dataType="java.lang.String">$0.name_18</name>
+    <type>$0.type_17</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_18</externalId>
+  </buyingTimeFrame>
+  <fxAccount>
+    <internalId clover:dataType="java.lang.String">$0.internalId_18</internalId>
+    <name clover:dataType="java.lang.String">$0.name_19</name>
+    <type>$0.type_18</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_19</externalId>
+  </fxAccount>
+  <url clover:dataType="java.lang.String">$0.url</url>
+  <salesGroup>
+    <internalId clover:dataType="java.lang.String">$0.internalId_19</internalId>
+    <name clover:dataType="java.lang.String">$0.name_20</name>
+    <type>$0.type_19</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_20</externalId>
+  </salesGroup>
+  <drAccount>
+    <internalId clover:dataType="java.lang.String">$0.internalId_20</internalId>
+    <name clover:dataType="java.lang.String">$0.name_21</name>
+    <type>$0.type_20</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_21</externalId>
+  </drAccount>
+  <salesRep>
+    <internalId clover:dataType="java.lang.String">$0.internalId_21</internalId>
+    <name clover:dataType="java.lang.String">$0.name_22</name>
+    <type>$0.type_21</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_22</externalId>
+  </salesRep>
+  <consolAging clover:dataType="java.lang.Number">$0.consolAging</consolAging>
+  <mobilePhone clover:dataType="java.lang.String">$0.mobilePhone</mobilePhone>
+  <email clover:dataType="java.lang.String">$0.email</email>
+  <displaySymbol clover:dataType="java.lang.String">$0.displaySymbol</displaySymbol>
+  <numberFormat>$0.numberFormat</numberFormat>
+  <syncPartnerTeams clover:dataType="java.lang.Boolean">$0.syncPartnerTeams</syncPartnerTeams>
+  <sendEmail clover:dataType="java.lang.Boolean">$0.sendEmail</sendEmail>
+  <customForm>
+    <internalId clover:dataType="java.lang.String">$0.internalId_22</internalId>
+    <name clover:dataType="java.lang.String">$0.name_23</name>
+    <type>$0.type_22</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_23</externalId>
+  </customForm>
+  <subsidiary>
+    <internalId clover:dataType="java.lang.String">$0.internalId_23</internalId>
+    <name clover:dataType="java.lang.String">$0.name_24</name>
+    <type>$0.type_23</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_24</externalId>
+  </subsidiary>
+  <consolOverdueBalance clover:dataType="java.lang.Number">$0.consolOverdueBalance</consolOverdueBalance>
+  <shippingItem>
+    <internalId clover:dataType="java.lang.String">$0.internalId_24</internalId>
+    <name clover:dataType="java.lang.String">$0.name_25</name>
+    <type>$0.type_24</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_25</externalId>
+  </shippingItem>
+  <clickStream clover:dataType="java.lang.String">$0.clickStream</clickStream>
+  <buyingReason>
+    <internalId clover:dataType="java.lang.String">$0.internalId_25</internalId>
+    <name clover:dataType="java.lang.String">$0.name_26</name>
+    <type>$0.type_25</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_26</externalId>
+  </buyingReason>
+  <stage>$0.stage</stage>
+  <unbilledOrders clover:dataType="java.lang.Number">$0.unbilledOrders</unbilledOrders>
+  <openingBalanceDate clover:dataType="javax.xml.datatype.XMLGregorianCalendar">$0.openingBalanceDate</openingBalanceDate>
+  <defaultOrderPriority clover:dataType="java.lang.Number">$0.defaultOrderPriority</defaultOrderPriority>
+  <contactRolesList>
+    <replaceAll clover:dataType="java.lang.Boolean">$0.replaceAll_8</replaceAll>
+  </contactRolesList>
+  <entityStatus>
+    <internalId clover:dataType="java.lang.String">$0.internalId_26</internalId>
+    <name clover:dataType="java.lang.String">$0.name_27</name>
+    <type>$0.type_26</type>
+    <externalId clover:dataType="java.lang.String">$0.externalId_27</externalId>
+  </entityStatus>
+  <firstName clover:dataType="java.lang.String">$0.firstName</firstName>
+  <printTransactions clover:dataType="java.lang.Boolean">$0.printTransactions</printTransactions>
+  <internalId clover:dataType="java.lang.String">$0.internalId_27</internalId>
+  <faxTransactions clover:dataType="java.lang.Boolean">$0.faxTransactions</faxTransactions>
+  <creditCardsList>
+    <replaceAll clover:dataType="java.lang.Boolean">$0.replaceAll_9</replaceAll>
+  </creditCardsList>
+  <consolBalance clover:dataType="java.lang.Number">$0.consolBalance</consolBalance>
+  <daysOverdue clover:dataType="java.lang.Number">$0.daysOverdue</daysOverdue>
+  <defaultAddress clover:dataType="java.lang.String">$0.defaultAddress</defaultAddress>
+  <phoneticName clover:dataType="java.lang.String">$0.phoneticName</phoneticName>
+  <dateCreated clover:dataType="javax.xml.datatype.XMLGregorianCalendar">$0.dateCreated</dateCreated>
+  <lastModifiedDate clover:dataType="javax.xml.datatype.XMLGregorianCalendar">$0.lastModifiedDate</lastModifiedDate>
+  <visits clover:dataType="java.lang.Number">$0.visits</visits>
+</CUSTOMER>]]></attr>
+<attr name="_data_format"><![CDATA[MAP]]></attr>
+<attr name="__metadata"><![CDATA[true]]></attr>
+</Node>
+<Edge debugMode="true" fromNode="FOREACH_OBJECT_CUSTOMER:0" guiBendpoints="" id="Edge1" inPort="Port 0 (in)" metadata="a9ec1427-5624-494a-8e49-d7c8175f3ee3" outPort="Port 0 (out)" toNode="MAP_WRITER0:0"/>
+<Edge debugMode="true" fromNode="JSON_READER0:0" guiBendpoints="" id="Edge0" inPort="Port 0 (in)" metadata="82d6c223-1f9b-4166-8c2b-bf56025064f7" outPort="Port 0 (out)" toNode="FOREACH_OBJECT_CUSTOMER:0"/>
+</Phase>
+</Graph>

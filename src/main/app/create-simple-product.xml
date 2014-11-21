@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:context="http://www.springframework.org/schema/context" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:magento="http://www.mulesoft.org/schema/mule/magento" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.5.1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/magento http://www.mulesoft.org/schema/mule/magento/current/mule-magento.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-current.xsd">
+    <magento:config name="Magento" username="${magento.username}" password="${magento.password}" address="${magento.address}" doc:name="Magento"/>
+    <context:property-placeholder location="credentials.properties"/>
+    <flow name="CreateSimpleProductFlow1" doc:name="CreateSimpleProductFlow1">
+        <http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8083" path="simple" doc:name="receive-request"/>
+        <logger message="#[payload]" level="INFO" doc:name="log payload"/>
+        <magento:create-product config-ref="Magento" type="simple" set="9" sku="SKU003" doc:name="Magento">
+            <magento:attributes name="Test 003" description="Product created for testing connectivity" short_description="demo prod" weight="5" status="1" price="10"/>
+           
+            <magento:additional-attributes>
+            <magento:additional-attribute key="colour" value="3"/>
+            </magento:additional-attributes>
+        </magento:create-product>
+        <logger message="#[payload]" level="INFO" doc:name="post product creation"/>
+    </flow>
+</mule>

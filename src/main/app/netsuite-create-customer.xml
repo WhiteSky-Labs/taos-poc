@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:scripting="http://www.mulesoft.org/schema/mule/scripting" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns:netsuite="http://www.mulesoft.org/schema/mule/netsuite" xmlns:data-mapper="http://www.mulesoft.org/schema/mule/ee/data-mapper" xmlns:vm="http://www.mulesoft.org/schema/mule/vm"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.5.1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/current/mule-vm.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/netsuite http://www.mulesoft.org/schema/mule/netsuite/current/mule-netsuite.xsd
+http://www.mulesoft.org/schema/mule/ee/data-mapper http://www.mulesoft.org/schema/mule/ee/data-mapper/current/mule-data-mapper.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+http://www.mulesoft.org/schema/mule/scripting http://www.mulesoft.org/schema/mule/scripting/current/mule-scripting.xsd">
+
+ <flow name="create-customer" doc:name="create-customer">
+        <vm:inbound-endpoint exchange-pattern="one-way" path="netsuiterequestqueue" doc:name="consume-customer-data"/>
+        <message-properties-transformer doc:name="assign-payload-to-variable">
+            <add-message-property key="customerData" value="#[payload]"/>
+            <add-message-property key="customerEmail" value="#[payload.email]"/>
+        </message-properties-transformer>
+        <netsuite:search-with-expression config-ref="NetsuiteConnector" expression="is(email,'#[payload.email]'),is(firstName, '#[payload.firstName]')" searchRecord="CUSTOMER" doc:name="check-for-customer-existence"/>
+        <choice doc:name="Choice">
+            <when expression="#[payload.recordList.record.size()==0]">
+                <set-payload value="#[message.outboundProperties['customerData']]" doc:name="create-customer-request"/>
+                <netsuite:add-record config-ref="NetsuiteConnector"  doc:name="create-customer" recordType="CUSTOMER">
+        		</netsuite:add-record>
+                <tracking:custom-event event-name="Customer Info" doc:name="create-customer-info">
+                    <tracking:meta-data key="Customer email" value="#[message.outboundProperties['customerEmail']]"/>
+                    <tracking:meta-data key="InternalId" value="#[payload.internalId] "/>
+                    <tracking:meta-data key="Status" value="Customer created successfully"/>
+                </tracking:custom-event>
+                <logger level="INFO" doc:name="log-create-customer-status" message="Customer created successfully.........#[payload.internalId]:#[message.outboundProperties['customerEmail']]"/>
+            </when>
+            <when expression="#[payload.recordList.record.size()&gt;0]">
+                <logger message="Customer internalId----#[payload.recordList.record.get(0).internalId]" level="INFO" doc:name="log-internalid"/>
+                <set-variable variableName="internalId" value="#[payload.recordList.record.get(0).internalId]" doc:name="set-internalid"/>
+                <set-payload value="#[message.outboundProperties['customerData']]" doc:name="update-customer-request"/>
+                <expression-transformer doc:name="add-internalid-to-cutomer-request"  expression="#[message.payload.internalId=flowVars['internalId'];message.payload]">
+                 </expression-transformer>
+                <netsuite:update-record config-ref="NetsuiteConnector" recordType="CUSTOMER" doc:name="update-customer">
+                    <netsuite:attributes ref="#[payload]"/>
+                </netsuite:update-record>
+                <tracking:custom-event event-name="Customer Info" doc:name="update-customer-info">
+                    <tracking:meta-data key="Customer email" value="#[message.outboundProperties['customerEmail']]"/>
+                    <tracking:meta-data key="InternalId" value="#[payload.internalId] "/>
+                    <tracking:meta-data key="Status" value="Customer updated successfully"/>
+                </tracking:custom-event>
+                <logger message="Update customer successful-----------------#[payload.internalId]:#[message.outboundProperties['customerEmail']]" level="INFO" doc:name="log-update-customer-status"/>
+            </when>
+        </choice>
+    </flow>
+</mule>
+ 

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:magento="http://www.mulesoft.org/schema/mule/magento" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.5.1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/magento http://www.mulesoft.org/schema/mule/magento/current/mule-magento.xsd">
+    <flow name="link-productsFlow1" doc:name="link-productsFlow1">
+        <http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8088" doc:name="receive-request"/>
+        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+        <magento:add-product-link config-ref="Magento" type="grouped" linkedProductIdOrSku="WSL_SKU_CHILD_001" productSku="WSL_SKU_PRNT_003" doc:name="Magento">
+        <magento:product-link-entity set="10"/>       
+        </magento:add-product-link>
+        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+    </flow>
+</mule>

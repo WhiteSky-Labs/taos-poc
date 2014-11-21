@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:context="http://www.springframework.org/schema/context" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:netsuite="http://www.mulesoft.org/schema/mule/netsuite" xmlns:vm="http://www.mulesoft.org/schema/mule/vm" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:data-mapper="http://www.mulesoft.org/schema/mule/ee/data-mapper" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.5.1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/data-mapper http://www.mulesoft.org/schema/mule/ee/data-mapper/current/mule-data-mapper.xsd
+http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/current/mule-vm.xsd
+http://www.mulesoft.org/schema/mule/netsuite http://www.mulesoft.org/schema/mule/netsuite/current/mule-netsuite.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-current.xsd">
+    <netsuite:config name="NetsuiteConnector" email=" ravi@whiteskylabs.com" password="Netsuite2014" account="TSTDRV1174526" roleId="3" doc:name="Netsuite"/>
+    <data-mapper:config name="JSON_To_CUSTOMER" transformationGraphPath="json_to_customer.grf" doc:name="JSON_To_CUSTOMER"/>
+    <context:property-placeholder location="credentials.properties"/>
+    <flow name="receive-customer-data" doc:name="receive-customer-data">
+        <http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8086" path="customer" doc:name="receive-request"/>
+        <object-to-string-transformer doc:name="object to-string"/>
+        <data-mapper:transform config-ref="JSON_To_CUSTOMER" doc:name="json-to-map"/>
+        <logger message="Datamapper response:::::::::::::::::::::::#[payload]" level="INFO" doc:name="log-customer-data"/>
+        <tracking:custom-event event-name="Customer Info" doc:name="customer-data-tracked">
+            <tracking:meta-data key="Customer email" value="#[payload.email] "/>
+            <tracking:meta-data key="Status" value="Data Received"/>
+        </tracking:custom-event>
+      <!--   <set-payload value="{&quot;entity_id&quot;:&quot;239&quot;, &quot;entity_type_id&quot;:&quot;1&quot;, &quot;attribute_set_id&quot;:&quot;0&quot;, &quot;website_id&quot;:&quot;1&quot;, &quot;email&quot;:&quot;franzglobalmail2221@yahoo.com&quot;, &quot;group_id&quot;:&quot;1&quot;, &quot;increment_id&quot;:null, &quot;store_id&quot;:&quot;1&quot;, &quot;created_at&quot;:&quot;2014-10-03 10:41:30&quot;, &quot;updated_at&quot;:&quot;2014-11-17 06:40:18&quot;, &quot;is_active&quot;:&quot;1&quot;, &quot;disable_auto_group_change&quot;:&quot;0&quot;, &quot;created_in&quot;:&quot;Workcorp&quot;, &quot;firstname&quot;:&quot;Franz Anthony Test&quot;, &quot;lastname&quot;:&quot;Carandang Test&quot;, &quot;default_billing&quot;:&quot;386&quot;, &quot;default_shipping&quot;:&quot;386&quot;, &quot;customer_activated&quot;:&quot;0&quot;, &quot;prefix&quot;:&quot;&quot;, &quot;middlename&quot;:&quot;&quot;, &quot;suffix&quot;:&quot;&quot;, &quot;dob&quot;:null, &quot;taxvat&quot;:&quot;&quot;, &quot;gender&quot;:&quot;&quot;, &quot;is_subscribed&quot;:false, &quot;price_level_id&quot;:&quot;&quot;, &quot;parent_id&quot;:0, &quot;dob_is_formated&quot;:true, &quot;confirmation&quot;:null }" doc:name="Set Payload"/> -->
+        <vm:outbound-endpoint exchange-pattern="one-way"  doc:name="dispatch-data" path="netsuiterequestqueue"/>     
+    </flow>
+   
+</mule>

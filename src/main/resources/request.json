@@ -1,0 +1,123 @@
+{
+	"title": "Magento Netsuite Schema",
+	"type":"object",
+	"properties":{
+		"attribute_set_id": {
+			"type":"string",
+			"required":false
+		},
+		"confirmation": {
+			"type":"string",
+			"required":false
+		},
+		"created_at": {
+			"type":"string",
+			"required":false
+		},
+		"created_in": {
+			"type":"string",
+			"required":false
+		},
+		"customer_activated": {
+			"type":"string",
+			"required":false
+		},
+		"default_billing": {
+			"type":"string",
+			"required":false
+		},
+		"default_shipping": {
+			"type":"string",
+			"required":false
+		},
+		"disable_auto_group_change": {
+			"type":"string",
+			"required":false
+		},
+		"dob_is_formated": {
+			"type":"boolean",
+			"required":false
+		},
+		"dob": {
+			"type":"string",
+			"required":false
+		},
+		"email": {
+			"type":"string",
+			"required":false
+		},
+		"entity_id": {
+			"type":"string",
+			"required":false
+		},
+		"entity_type_id": {
+			"type":"string",
+			
+			"required":false
+		},
+		"firstname": {
+			"type":"string",
+			"required":false
+		},
+		"gender": {
+			"type":"string",
+			"required":false
+		},
+		"group_id": {
+			"type":"string",
+			"required":false
+		},
+		"increment_id": {
+			"type":"string",
+			"required":false
+		},
+		"is_active": {
+			"type":"string",
+			"required":false
+		},
+		"is_subscribed": {
+			"type":"boolean",
+			"required":false
+		},
+		"lastname": {
+			"type":"string",
+			"required":false
+		},
+		"middlename": {
+			"type":"string",
+			"required":false
+		},
+		"parent_id": {
+			"type":"number",
+			"required":false
+		},
+		"prefix": {
+			"type":"string",
+			"required":false
+		},
+		"price_level_id": {
+			"type":"string",
+			"required":false
+		},
+		"store_id": {
+			"type":"string",
+			"required":false
+		},
+		"suffix": {
+			"type":"string",
+			"required":false
+		},
+		"taxvat": {
+			"type":"string",
+			"required":false
+		},
+		"updated_at": {
+			"type":"string",
+			"required":false
+		},
+		"website_id": {
+			"type":"string",
+			"required":false
+		}
+	}
+}

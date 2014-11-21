@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:magento="http://www.mulesoft.org/schema/mule/magento" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.5.1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+http://www.mulesoft.org/schema/mule/magento http://www.mulesoft.org/schema/mule/magento/current/mule-magento.xsd">
+    <flow name="create-associate-productsFlow1" doc:name="create-associate-productsFlow1">
+        <http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8090" doc:name="receive-request"/>
+        <json:json-to-object-transformer returnClass="java.util.HashMap" doc:name="json-to-map-level1"/>
+        <logger message="Parent ::: #[payload.parent] Child::: #[payload.child]" level="INFO" doc:name="Logger"/>
+        <set-variable variableName="parent" value="#[payload.parent]" doc:name="set-parent"/>
+        <set-variable variableName="child" value="#[payload.child]" doc:name="set-child"/>
+        <flow-ref name="create-parent" doc:name="create-parent"/>
+        <flow-ref name="create-child" doc:name="create-child"/>
+        <flow-ref name="create-association" doc:name="associate"/>
+        <set-payload value="Flow completed" doc:name="Set Payload"/>
+    </flow>
+    <flow name="create-parent" doc:name="create-parent">
+        <logger message="#[flowVars['parent']]" level="INFO" doc:name="Logger"/>
+        <magento:create-product config-ref="Magento" type="configurable" set="#[flowVars['parent'].set]" sku="#[flowVars['parent'].sku]" doc:name="create-parent">
+            <magento:attributes name="#[flowVars['parent'].name]" description="#[flowVars['parent'].description]" short_description="#[flowVars['parent'].short_description]" weight="#[flowVars['parent'].weight]" price="#[flowVars['parent'].price]" status="1"/>
+        </magento:create-product>
+        <logger message="Parent created Id: #[payload]" level="INFO" doc:name="Logger"/>
+    </flow>
+    <flow name="create-child" doc:name="create-child">
+        <logger message="In Child...#[flowVars['child']]" level="INFO" doc:name="Logger"/>
+        <magento:create-product config-ref="Magento" type="simple" set="#[flowVars['child'].set]" sku="#[flowVars['child'].sku]" doc:name="create-child">
+            <magento:attributes name="#[flowVars['child'].name]" description="#[flowVars['child'].description]" short_description="#[flowVars['child'].short_description]" weight="#[flowVars['child'].weight]" price="#[flowVars['child'].price]" status="1"/>
+            <magento:additional-attributes>
+           
+            <!-- magento:additional-attribute key="Colour" value="Red"/>  -->
+            <magento:additional-attribute key="Size" value-ref=""/>
+            </magento:additional-attributes>
+        </magento:create-product>
+        <logger message="Child created ID: #[payload]" level="INFO" doc:name="Logger"/>
+    </flow>
+    <flow name="create-association" doc:name="create-association">
+        <logger message="In associate" level="INFO" doc:name="Logger"/>
+        <magento:add-product-link config-ref="Magento" type="grouped" linkedProductIdOrSku="#[flowVars['child'].sku]" productSku="#[flowVars['parent'].sku]" doc:name="associate">
+            <magento:product-link-entity set="#[flowVars['child'].set]"/>
+        </magento:add-product-link>
+        <logger message="Association created?  #[payload]" level="INFO" doc:name="Logger"/>
+    </flow>
+</mule>

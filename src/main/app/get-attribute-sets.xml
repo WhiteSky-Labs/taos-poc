@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:magento="http://www.mulesoft.org/schema/mule/magento" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.5.1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/magento http://www.mulesoft.org/schema/mule/magento/current/mule-magento.xsd">
+    <flow name="get-attribute-setsFlow1" doc:name="get-attribute-setsFlow1">
+        <http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8081" doc:name="receive-input"/>
+        <logger level="INFO" doc:name="log"/>
+        <magento:list-product-attribute-sets config-ref="Magento" doc:name="Magento"/>
+        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+        <foreach collection="#[payload]" doc:name="For Each">
+            <logger message="Set ID: #[payload.getSet_id()]" level="INFO" doc:name="Logger"/>
+        </foreach>
+    </flow>
+</mule>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns:magento="http://www.mulesoft.org/schema/mule/magento" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.5.1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/magento http://www.mulesoft.org/schema/mule/magento/current/mule-magento.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
+    <flow name="create-configurable-productFlow1" doc:name="create-configurable-productFlow1">
+        <http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8084" path="configurable" doc:name="receive-request"/>
+        <json:json-to-object-transformer returnClass="java.util.HashMap" doc:name="json-to-map"/>
+        <logger message="#[payload]" level="INFO" doc:name="log"/>
+        <set-variable variableName="datamap" value="#[message.payload]" doc:name="set-map"/>
+        <magento:list-products config-ref="Magento" filter="dsql:SELECT sku FROM CatalogProductReturnEntity where sku='#[payload.Sku]'" doc:name="list-products"/>
+        <choice doc:name="product-exists-check">
+         <when expression="#[payload.size() &gt;0]">
+          <logger message="Products already exists" level="INFO" doc:name="log"/>
+         </when>
+         <otherwise>
+         <logger message="creating product with data ...#[flowVars['datamap']]" level="INFO" doc:name="log"/>
+         <magento:create-product config-ref="Magento" type="#[flowVars['datamap'].Type]" set="#[flowVars['datamap'].Set]" sku="#[flowVars['datamap'].Sku]" doc:name="create-product">
+            <magento:attributes name="#[flowVars['datamap'].Name]" description="#[flowVars['datamap'].Description]" short_description="#[flowVars['datamap'].Short_description]" weight="#[flowVars['datamap'].Weight]" status="#[flowVars['datamap'].Status]" price="#[flowVars['datamap'].Price]"/>
+        </magento:create-product>
+        
+        <logger message="Product Created...#[payload]" level="INFO" doc:name="log"/>
+         </otherwise>
+         </choice>
+        
+    </flow>
+</mule>
