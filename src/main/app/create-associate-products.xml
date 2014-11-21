@@ -33,17 +33,19 @@ http://www.mulesoft.org/schema/mule/magento http://www.mulesoft.org/schema/mule/
             <magento:attributes name="#[flowVars['child'].name]" description="#[flowVars['child'].description]" short_description="#[flowVars['child'].short_description]" weight="#[flowVars['child'].weight]" price="#[flowVars['child'].price]" status="1"/>
             <magento:additional-attributes>
            
-            <!-- magento:additional-attribute key="Colour" value="Red"/>  -->
-            <magento:additional-attribute key="Size" value-ref=""/>
+            <magento:additional-attribute key="colour" value="3"/>
+            <magento:additional-attribute key="size" value="8"/>
             </magento:additional-attributes>
         </magento:create-product>
         <logger message="Child created ID: #[payload]" level="INFO" doc:name="Logger"/>
     </flow>
     <flow name="create-association" doc:name="create-association">
         <logger message="In associate" level="INFO" doc:name="Logger"/>
-        <magento:add-product-link config-ref="Magento" type="grouped" linkedProductIdOrSku="#[flowVars['child'].sku]" productSku="#[flowVars['parent'].sku]" doc:name="associate">
-            <magento:product-link-entity set="#[flowVars['child'].set]"/>
-        </magento:add-product-link>
-        <logger message="Association created?  #[payload]" level="INFO" doc:name="Logger"/>
+        <component class="com.wsl.util.JSONMessageCreator" doc:name="Java"/>
+        <message-properties-transformer doc:name="Message Properties">
+            <add-message-property key="Authorization-X" value="username=mulesoft,password=9poweradmin"/>
+        </message-properties-transformer>
+        <http:outbound-endpoint exchange-pattern="request-response" method="POST" address="http://mulesoft.dev.taoscreative.com.au/connector/request/associateproduct" doc:name="HTTP"/>
+        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
     </flow>
 </mule>
