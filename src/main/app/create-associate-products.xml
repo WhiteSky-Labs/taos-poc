@@ -18,17 +18,17 @@ http://www.mulesoft.org/schema/mule/magento http://www.mulesoft.org/schema/mule/
         <flow-ref name="create-parent" doc:name="create-parent"/>
         <flow-ref name="create-child" doc:name="create-child"/>
         <flow-ref name="create-association" doc:name="associate"/>
-        <set-payload value="Flow completed" doc:name="Set Payload"/>
+        <set-payload value="Flow completed" doc:name="set-response"/>
     </flow>
     <flow name="create-parent" doc:name="create-parent">
-        <logger message="#[flowVars['parent']]" level="INFO" doc:name="Logger"/>
+        <logger message="#[flowVars['parent']]" level="INFO" doc:name="incoming"/>
         <magento:create-product config-ref="Magento" type="configurable" set="#[flowVars['parent'].set]" sku="#[flowVars['parent'].sku]" doc:name="create-parent">
             <magento:attributes name="#[flowVars['parent'].name]" description="#[flowVars['parent'].description]" short_description="#[flowVars['parent'].short_description]" weight="#[flowVars['parent'].weight]" price="#[flowVars['parent'].price]" status="1"/>
         </magento:create-product>
-        <logger message="Parent created Id: #[payload]" level="INFO" doc:name="Logger"/>
+        <logger message="Parent created Id: #[payload]" level="INFO" doc:name="log-response"/>
     </flow>
     <flow name="create-child" doc:name="create-child">
-        <logger message="In Child...#[flowVars['child']]" level="INFO" doc:name="Logger"/>
+        <logger message="In Child...#[flowVars['child']]" level="INFO" doc:name="incoming"/>
         <magento:create-product config-ref="Magento" type="simple" set="#[flowVars['child'].set]" sku="#[flowVars['child'].sku]" doc:name="create-child">
             <magento:attributes name="#[flowVars['child'].name]" description="#[flowVars['child'].description]" short_description="#[flowVars['child'].short_description]" weight="#[flowVars['child'].weight]" price="#[flowVars['child'].price]" status="1"/>
             <magento:additional-attributes>
@@ -37,15 +37,15 @@ http://www.mulesoft.org/schema/mule/magento http://www.mulesoft.org/schema/mule/
             <magento:additional-attribute key="size" value="8"/>
             </magento:additional-attributes>
         </magento:create-product>
-        <logger message="Child created ID: #[payload]" level="INFO" doc:name="Logger"/>
+        <logger message="Child created ID: #[payload]" level="INFO" doc:name="log-response"/>
     </flow>
     <flow name="create-association" doc:name="create-association">
-        <logger message="In associate" level="INFO" doc:name="Logger"/>
-        <component class="com.wsl.util.JSONMessageCreator" doc:name="Java"/>
-        <message-properties-transformer doc:name="Message Properties">
-            <add-message-property key="Authorization-X" value="username=mulesoft,password=9poweradmin"/>
+        <logger message="In associate" level="INFO" doc:name="check"/>
+        <component class="com.wsl.util.JSONMessageCreator" doc:name="create-json-request"/>
+        <message-properties-transformer doc:name="add-header">
+            <add-message-property key="Authorization-X" value="username=${magento.username},password=${magento.password}"/>
         </message-properties-transformer>
-        <http:outbound-endpoint exchange-pattern="request-response" method="POST" address="http://mulesoft.dev.taoscreative.com.au/connector/request/associateproduct" doc:name="HTTP"/>
-        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+        <http:outbound-endpoint exchange-pattern="request-response" method="POST" address="${magento.associateurl}" doc:name="magento-service"/>
+        <logger message="#[payload]" level="INFO" doc:name="log-response"/>
     </flow>
 </mule>
